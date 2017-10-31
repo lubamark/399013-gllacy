@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Любовь Марковская](https://up.htmlacademy.ru/htmlcss/19/user/399013).
-* Наставник: [Алексей Пудников] (https://htmlacademy.ru/profile/id71418).
+* Наставник: [Алексей Пудников](https://up.htmlacademy.ru/htmlcss/19/user/71418).
 
 ---
 
