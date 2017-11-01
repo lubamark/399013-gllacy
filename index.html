@@ -28,7 +28,8 @@
 <!--
 
 Кнопки в шапке
-Я же правильно понимаю, что нужно вписывать сразу все модальные окна и мы их будем скрывать для неактивных состояний? 
+
+Нужно вписывать сразу все модальные окна и мы их будем скрывать для неактивных состояний? 
 
 Для конпок луччше <button></button>  использовать или делать диву класс? 
 
@@ -66,6 +67,62 @@
 			<p calss="header-phone">8 812 450-25-25</p>
 		</section>
 	</header> 
+	<main>
+	
+<!--Слайдер
+
+Слайдер мы будем делать на css  как в этих (https://htmlacademy.ru/courses/76/run/23) уроках?
+
+Картинки лучше размещать как картинки или как бэкграунд к диву с кнопкой и описанием?
+
+
+-->
+		<section class="slider">
+			<div class="sliders-input">
+				<input type="radio" id="btn-1" name="toggle">
+				<input type="radio" id="btn-2" name="toggle">
+				<input type="radio" id="btn-3" name="toggle">
+			</div>
+			<div class="slider-controls">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
+                </div>
+			<div class="slides">
+				<div id="slide-1" class="slide">
+					<p class="slider-description">
+						Крем-брюле и пломбир с малиновым джемом 
+					</p>
+					<button>Давайте оба!</button>
+				</div>
+				<div id="slide-2" class="slide">
+					<p class="slider-description">
+						Шоколадный пломбир и лимонный сорбет  
+					</p>
+					<button>Давайте оба!</button>
+				</div>
+				<div id="slide-3" class="slide">
+					<p class="slider-description">
+						Пломбир с помадкой и клубничный щербет 
+					</p>
+					<button>Давайте оба!</button>
+				</div>
+			</div>
+		</section>
+		<section class="bonus-stuff">
+			<div class="bonus-item">
+				<h2>Малинка даром!</h2>
+				<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+				<button>Хочу варенье!</button>
+			</div>
+			<div class="bonus-item">
+				<h2>Шоколадки даром!</h2>
+				<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+				<button>Хочу шоколадки!</button>
+			</div>
+		</section>	
+		
+	</main>
 
   </body>
 </html>
