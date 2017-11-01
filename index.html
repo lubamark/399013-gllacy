@@ -5,8 +5,67 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+ <!--Шапка-->
+	<header class="page-header">
+		<div class="logo">
+			<img alt="logo-gllasy">
+		</div>
+<!--Главное меню -->
+		<nav class="main-menu">
+			<ul>
+				  <li><a href="#">Каталог</a></li>
+					<ul>
+						<li><a href="#">Новинки</a></li>
+						<li><a href="#">Сливочное</a></li>
+						<li><a href="#">Щербеты</a></li>
+						<li><a href="#">Фруктовый лед</a></li>
+						<li><a href="#">Мелорин</a></li>
+					</ul>
+				  <li><a href="#">Доставка и оплата</a></li>
+				  <li><a href="#">О Компании</a></li>
+			</ul>
+		</nav>
+<!--
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+Кнопки в шапке
+Я же правильно понимаю, что нужно вписывать сразу все модальные окна и мы их будем скрывать для неактивных состояний? 
+
+Для конпок луччше <button></button>  использовать или делать диву класс? 
+
+Пока сделала див, смущает наличие модального окна почему-то. Или его не надо вкладывать?
+
+-->		
+		<section class="header-buttons">
+			<div class="button search">
+				<a href="#">Поиск
+					<div class="modal-search">
+						<input type="text" placeholder="Что ищем?">
+					</div>
+				</a>
+			</div>
+			<div class="button enter">
+				<a href="#">Вход</a>
+				<div class="modal-enter">
+					<form action="/echo" method="post">
+						<input type="email" placeholder="Электронная почта" required>
+						<input type="password" placeholder="Пароль" required>
+						<button>Войти</button>
+						<section class="help">
+							<a href="#">Забыли пароль?</a>
+							<a href="#">Новая регистрация</a>
+						</section>
+					</form>
+				</div>
+			</div>
+			<div class="button cart">
+				<a href="#">Пусто</a>
+			</div>
+		</section>
+		<section class="header-contacts">
+			<p class="header-schedule">С 10 до 20, ежедневно</p>
+			<p calss="header-phone">8 812 450-25-25</p>
+		</section>
+	</header> 
 
   </body>
 </html>
