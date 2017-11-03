@@ -129,6 +129,29 @@
 				</div>
 			</div>
 		</section>
+<!--Блог + подписка
+
+инпутам тоже лучше сделать классы?
+пока не стала, но в разных формах разные кегли шрифта, ну и ширина поля.
+у кнопки в форме сабмит по умолчанию вроде, нужно ли явно прописывать?
+
+-->
+		<section class="blog-and-subscribe">
+			<div class="container">
+				<aside class="blog-news">
+					<p class="blog-news__caption">Новое в нашем блоге</p>
+					<a class="blog-news__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+				</aside>
+				<div class="subscribe">
+					<form action="/echo" method="post">
+						<label for="subscribe-field">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label>
+						<input type="email" name="subscribe-field" placeholder="Электронная почта">
+						<button>Отправить</button>
+					</form>
+				</div>
+				
+			</div>
+		</section>
 	</main>
 <!--Окно поиска-->
 	<div class="modal-search">
