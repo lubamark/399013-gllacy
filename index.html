@@ -146,13 +146,42 @@
 					<form action="/echo" method="post">
 						<label for="subscribe-field">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label>
 						<input type="email" name="subscribe-field" placeholder="Электронная почта">
-						<button>Отправить</button>
+						<button class="button">Отправить</button>
 					</form>
 				</div>
-				
+			</div>
+		</section>
+<!-- Контакты и карта 
+
+Я поковырялась с тем, как поменять метку на карте https://tech.yandex.ru/maps/doc/jsapi/1.x/dg/tasks/how-to-add-placemark-docpage/#placemark-style я так понимаю что js у нас будет попозже. Думаю, позже и вернемся к этому, графика все равно не готова еще. Я ее просто вставила, типа вот она, туточки. 
+
+А поле с контактами и кнопкой формы мы будем абсолютно позиционировать, ога?
+
+Внутри допустимо делать списком определений? стили там чредуются, но у последнего не будет dd
+
+-->
+		<section class="contacts">
+			<div class="container">
+				<div class="contacts-map">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3f51ef665f409fa8e47444b13035a00f5f3e9fddeb15e2fa093194a23e22761f&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+				</div>
+				<div class="contacts-block">
+					<dl class="contacts-block__list">
+						<dt>Адрес главного офиса и офлайн-магазина:</dt>
+							<dd>ул. Большая Конюшенная 19/8, Санкт-Петербург</dd>
+						<dt>Адрес главного офиса и офлайн-магазина:</dt>
+							<dd><a href="tel:+78124502525">8 812 450-25-25</a></dd>
+						<dt>(с 10 до 20 ежедневно)</dt>
+					</dl>
+					<button class="button" id="feedback-form">Форма обратной связи</button>
+				</div>
 			</div>
 		</section>
 	</main>
+	
+	
+	
+	
 <!--Окно поиска-->
 	<div class="modal-search">
 		<form action="/echo" method="get">
