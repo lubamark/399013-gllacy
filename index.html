@@ -8,12 +8,12 @@
  <!--Шапка-->
 	<header class="page-header">
 		<div class="container">
-			<div class="logo">
-				<img alt="Глейси">
-			</div>
 <!--Главное меню -->
 			<nav class="menu">
-				<ul>
+				<div class="logo">
+					<a><img src="logo-glassy.svg" alt="Логотип магазина Глейси" width="100" height="100"></a>
+				</div>
+				<ul class="menu-list">
 					<li><a href="#">Каталог</a>
 						<ul>
 							<li><a href="#">Новинки</a></li>
@@ -40,6 +40,7 @@
 		</div>
 	</header>
 	<main>
+		<h1 class="hidden-headline">Магазин мороженого Gllasy</h1>
 <!--Слайдер-->
 		<section class="slider">
 			<div class="container">
@@ -78,6 +79,7 @@
 <!--Блок бонусов -->
 		<section class="bonus-stuff">
 			<div class="container">
+				<h2 class="hidden-headline">Бонусы и акции</h2>
 				<div class="bonus-item">
 					<h2 class="bonus-item__title">Малинка даром!</h2>
 					<p class="bonus-item__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -93,34 +95,35 @@
 <!--Блок хитов-->
 		<section class="hits-list">
 			<div class="container">
+				<h2 class="hidden-headline">Хиты продаж</h2>
 				<div class="hit">
-					<img class="hit-photo" alt="хит-1">
-					<p class="hit-price">310<span class="ruble-icon"></span>/кг</p>
+					<img class="hit-photo" src="images/hit1.jpg" alt="хит-1">
+					<p class="hit-price">310<span class="ruble-icon"></span><sub>/кг</sub></p>
 					<a class="hit-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 				</div>
 				<div class="hit">
-					<img class="hit-photo" alt="хит-2">
-					<p class="hit-price">380<span class="ruble-icon"></span>/кг</p>
+					<img class="hit-photo" src="images/hit2.jpg" alt="хит-2">
+					<p class="hit-price">380<span class="ruble-icon"></span><sub>/кг</sub></p>
 					<a class="hit-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
 				</div>
 				<div class="hit">
-					<img class="hit-photo" alt="хит-3">
+					<img class="hit-photo" src="images/hit3.jpg" alt="хит-3">
 					<p class="hit-price">355<span class="ruble-icon"></span>/кг</p>
 					<a class="hit-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 				</div>
 				<div class="hit">
-					<img class="hit-photo" alt="хит-4">
-					<p class="hit-price">415<span class="ruble-icon"></span>/кг</p>
+					<img class="hit-photo" src="images/hit4.jpg" alt="хит-4">
+					<p class="hit-price">415<span class="ruble-icon"></span><sub>/кг</sub></p>
 					<a class="hit-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 				</div>
 			</div>
 		</section>
 <!--Презентационный блок-->
-		<section class="gllasy-info">
+		<article class="gllasy-info">
 			<div class="container">
 				<div class="glassy-about">
-					<h2 class="glassy-about__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-					<ul class="glassy-about__list">
+					<h2 class="glassy-about-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+					<ul class="glassy-about-list">
 						<li class="icecream-icon">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
 						<li class="leaf-icon">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
 						<li class="cow-icon">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</li>
@@ -128,23 +131,22 @@
 					</ul>
 				</div>
 			</div>
-		</section>
+		</article>
 <!--Блог + подписка
 
 инпутам тоже лучше сделать классы?
 пока не стала, но в разных формах разные кегли шрифта, ну и ширина поля.
-у кнопки в форме сабмит по умолчанию вроде, нужно ли явно прописывать?
 
 -->
 		<section class="blog-and-subscribe">
 			<div class="container">
-				<aside class="blog-news">
+				<article class="blog-news">
 					<p class="blog-news__caption">Новое в нашем блоге</p>
 					<a class="blog-news__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-				</aside>
+				</article>
 				<div class="subscribe">
 					<form action="/echo" method="post">
-						<label for="subscribe-input">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label></br>
+						<label for="subscribe-input">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label><br>
 						<input type="email" name="subscribe-field" id="subscribe-input" placeholder="Электронная почта">
 						<button class="button">Отправить</button>
 					</form>
@@ -157,8 +159,6 @@
 
 А поле с контактами и кнопкой формы мы будем абсолютно позиционировать, ога?
 
-Внутри допустимо делать списком определений? стили там чредуются, но у последнего не будет dd
-
 -->
 		<section class="contacts">
 			<div class="container">
@@ -166,13 +166,13 @@
 					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3f51ef665f409fa8e47444b13035a00f5f3e9fddeb15e2fa093194a23e22761f&amp;source=constructor"></iframe>
 				</div>
 				<div class="contacts-block">
-					<dl class="contacts-block__list">
-						<dt>Адрес главного офиса и офлайн-магазина:</dt>
-							<dd>ул. Большая Конюшенная 19/8, Санкт-Петербург</dd>
-						<dt>Адрес главного офиса и офлайн-магазина:</dt>
-							<dd><a href="tel:+78124502525">8 812 450-25-25</a></dd>
-						<dt>(с 10 до 20 ежедневно)</dt>
-					</dl>
+					<p class="contacts-caption">
+						Адрес главного офиса и офлайн-магазина:<br>
+							<span class="contacts-caption-strong">ул. Большая Конюшенная 19/8, Санкт-Петербург</span><br>
+						Адрес главного офиса и офлайн-магазина:<br>
+							<span class="contacts-caption-strong"><a href="tel:+78124502525">8 812 450-25-25</a></span><br>
+						(с 10 до 20 ежедневно)
+					</p>
 					<button class="button" id="feedback-form">Форма обратной связи</button>
 				</div>
 			</div>
@@ -202,7 +202,7 @@
 				</ul>
 			</div>
 			<div class="copyright">
-				<img src="" alt="HTML Академия">
+				<img src="logo-htmlacademy.svg" alt="HTML Академия">
 				<p class="copyright-caption">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>&copy; 2017</p>
 			</div>
 		</div>
@@ -238,8 +238,8 @@
 		<form action="/echo" method="post">
 			<h2 class="feedback-caption">Мы обязательно вам ответим!</h2>
 			<input type="text" name="feedback-name" placeholder="Как вас зовут?"><br>
-			<input type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required></br>
-			<textarea name="feedback-text" placeholder="Напишите что-нибудь..." rows="5"></textarea></br>
+			<input type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required><br>
+			<textarea name="feedback-text" placeholder="Напишите что-нибудь..." rows="5"></textarea><br>
 			<button class="button">Отправить</button>
 		</form>
 	</div>
