@@ -81,12 +81,12 @@
 			<div class="container">
 				<h2 class="hidden-headline">Бонусы и акции</h2>
 				<div class="bonus-item">
-					<h2 class="bonus-item__title">Малинка даром!</h2>
+					<h3 class="bonus-item__title">Малинка даром!</h2>
 					<p class="bonus-item__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 					<button class="button">Хочу варенье!</button>
 				</div>
 				<div class="bonus-item">
-					<h2 class="bonus-item__title">Шоколадки даром!</h2>
+					<h3 class="bonus-item__title">Шоколадки даром!</h2>
 					<p class="bonus-item__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 					<button class="button">Хочу шоколадки!</button>
 				</div>
@@ -98,22 +98,22 @@
 				<h2 class="hidden-headline">Хиты продаж</h2>
 				<div class="hit">
 					<img class="hit-photo" src="images/hit1.jpg" alt="хит-1">
-					<p class="hit-price">310<span class="ruble-icon"></span><sub>/кг</sub></p>
+					<p class="hit-price">310<span class="ruble-icon"></span><span class="weight">/кг</span></p>
 					<a class="hit-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 				</div>
 				<div class="hit">
 					<img class="hit-photo" src="images/hit2.jpg" alt="хит-2">
-					<p class="hit-price">380<span class="ruble-icon"></span><sub>/кг</sub></p>
+					<p class="hit-price">380<span class="ruble-icon"></span><span class="weight">/кг</span></p>
 					<a class="hit-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
 				</div>
 				<div class="hit">
 					<img class="hit-photo" src="images/hit3.jpg" alt="хит-3">
-					<p class="hit-price">355<span class="ruble-icon"></span>/кг</p>
+					<p class="hit-price">355<span class="ruble-icon"></span><span class="weight">/кг</span></p>
 					<a class="hit-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 				</div>
 				<div class="hit">
 					<img class="hit-photo" src="images/hit4.jpg" alt="хит-4">
-					<p class="hit-price">415<span class="ruble-icon"></span><sub>/кг</sub></p>
+					<p class="hit-price">415<span class="ruble-icon"></span><span class="weight">/кг</span></p>
 					<a class="hit-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 				</div>
 			</div>
@@ -187,10 +187,10 @@
 		<div class="container">
 			<div class="social-block">
 				<ul class="social-links">
-				<li class="twiter-icon"><a href="#" target="_blank"></a></li>
-				<li class="instagram-icon"><a href="#" target="_blank"></a></li>
-				<li class="facebook-icon"><a href="#" target="_blank"></a></li>
-				<li class="vk-icon"><a href="#" target="_blank"></a></li>
+				<li class="twiter-icon"><a href="#" target="_blank"><img src="vk.svg" alt="Twitter">Twitter</a></li>
+				<li class="instagram-icon"><a href="#" target="_blank"><img src="vk.svg" alt="Instagram">Instagram</a></li>
+				<li class="facebook-icon"><a href="#" target="_blank"><img src="vk.svg" alt="Facebook">Facebook</a></li>
+				<li class="vk-icon"><a href="#" target="_blank"><img src="vk.svg" alt="Вконтакте">Вконтакте</a></li>
 				</ul>
 			</div>
 			<div class="footer-info">
@@ -237,12 +237,11 @@
 	<div class="modal-feedback">
 		<form action="/echo" method="post">
 			<h2 class="feedback-caption">Мы обязательно вам ответим!</h2>
-			<input type="text" name="feedback-name" placeholder="Как вас зовут?"><br>
-			<input type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required><br>
-			<textarea name="feedback-text" placeholder="Напишите что-нибудь..." rows="5"></textarea><br>
+			<p><input type="text" name="feedback-name" placeholder="Как вас зовут?"></p>
+			<p><input type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required></p>
+			<p><textarea name="feedback-text" placeholder="Напишите что-нибудь..." rows="5"></textarea></p>
 			<button class="button">Отправить</button>
 		</form>
 	</div>
-
   </body>
 </html>
