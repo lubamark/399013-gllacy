@@ -28,11 +28,11 @@
 				</ul>
 			</nav>
 <!--Кнопки в шапке-->
-			<section class="header-buttons">
-				<button class="button button-search">Поиск</button>
-				<button class="button button-enter">Вход</button>
-				<button class="button button-cart">Пусто</button>
-			</section>
+			<ul class="header-buttons">
+				<li><button class="button button-search">Поиск</button></li>
+				<li><button class="button button-enter">Вход</button></li>
+				<li><button class="button button-cart cart-active">2 товара</button></li>
+			</ul>
 			<section class="header-contacts">
 				<p class="header-schedule">С 10 до 20, ежедневно</p>
 				<a href="tel:+78124502525" class="header-phone">8 812 450-25-25</a>
@@ -187,10 +187,10 @@
 		<div class="container">
 			<div class="social-block">
 				<ul class="social-links">
-				<li class="twiter-icon"><a href="#" target="_blank"><img src="vk.svg" alt="Twitter">Twitter</a></li>
-				<li class="instagram-icon"><a href="#" target="_blank"><img src="vk.svg" alt="Instagram">Instagram</a></li>
-				<li class="facebook-icon"><a href="#" target="_blank"><img src="vk.svg" alt="Facebook">Facebook</a></li>
-				<li class="vk-icon"><a href="#" target="_blank"><img src="vk.svg" alt="Вконтакте">Вконтакте</a></li>
+				<li class="twiter-icon"><a href="#" target="_blank"><img src="icon/twitter.svg" alt="Twitter">Twitter</a></li>
+				<li class="instagram-icon"><a href="#" target="_blank"><img src="icon/instagram.svg" alt="Instagram">Instagram</a></li>
+				<li class="facebook-icon"><a href="#" target="_blank"><img src="icon/facebook.svg" alt="Facebook">Facebook</a></li>
+				<li class="vk-icon"><a href="#" target="_blank"><img src="icon/vk.svg" alt="Вконтакте">Вконтакте</a></li>
 				</ul>
 			</div>
 			<div class="footer-info">
@@ -209,13 +209,13 @@
 	</footer>
 	
 <!--Окно поиска-->
-	<div class="modal-search">
+	<div class="modal modal-search">
 		<form action="https://echo.htmlacademy.ru/" method="get">
 			<input type="text" name="search" placeholder="Что ищем?">
 		</form>
 	</div>
 <!--Окно входа-->
-	<div class="modal-enter">
+	<div class="modal modal-enter">
 		<form action="https://echo.htmlacademy.ru/" method="post">
 			<input type="email" name="email" placeholder="Электронная почта" required>
 			<input type="password" name="password" placeholder="Пароль" required>
@@ -233,7 +233,7 @@
 Формам надо задавать классы или хватит того, что классы есть у дивов, в которых они лежат?
 
 -->
-	<div class="modal-feedback">
+	<div class="modal modal-feedback">
 		<form action="https://echo.htmlacademy.ru/" method="post">
 			<h2 class="feedback-caption">Мы обязательно вам ответим!</h2>
 			<p><input type="text" name="feedback-name" placeholder="Как вас зовут?"></p>
