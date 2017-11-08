@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+	</script>
   </head>
   <body>
  <!--Шапка-->
@@ -176,8 +178,8 @@
 		</section>
 <!-- Контакты и карта -->
 		<section class="contacts">
-			<div class="contacts-map">
-				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3f51ef665f409fa8e47444b13035a00f5f3e9fddeb15e2fa093194a23e22761f&amp;source=constructor"></iframe>
+			<div class="contacts-map" id="yandexMap" style="height:428px;">
+			Карта
 			</div>
 			<div class="container">
 				<div class="contacts-block">
@@ -253,5 +255,8 @@
 			<button class="button">Отправить</button>
 		</form>
 	</div>
+	
+<!--Скрипт для карты -->
+	<script src="js/map-marker.js"></script>
   </body>
 </html>
