@@ -29,12 +29,12 @@
 			</nav>
 <!--Кнопки в шапке-->
 			<ul class="header-buttons">
-				<li><button class="button button-search"><img src="img/search-icon.svg" width="17" height="17" alt="Поиск">Поиск</button></li>
-				<li><button class="button button-enter"><img src="img/enter-icon.svg" width="21" height="19">Вход</button></li>
-				<li><button class="button button-cart"><img src="img/cart-icon.svg" width="21" height="20">Пусто</button></li>
+				<li><button type="button" class="button button-search"><img src="img/search-icon.svg" width="17" height="17" alt="Поиск"><span class="visually-hidden">Поиск</span></button></li>
+				<li><button type="button" class="button button-enter"><img src="img/enter-icon.svg" width="21" height="19"> Вход</button></li>
+				<li><button type="button" class="button button-cart"><img src="img/cart-icon.svg" width="21" height="20"> Пусто</button></li>
 			</ul>
 			<section class="header-contacts">
-				<h2 class="hidden-title title">Режим работы и контакты</h2>
+				<h2 class="visually-hidden title">Режим работы и контакты</h2>
 				<p class="header-schedule">С <time datetime="10:00">10</time> до <time datetime="20:00">20</time>, ежедневно</p>
 				<a href="tel:+78124502525" class="header-phone">8 812 450-25-25</a>
 			</section>
@@ -75,26 +75,26 @@
 			</div>
 		</section>
 <!--Блок бонусов -->
-		<h1 class="hidden-title title">Магазин мороженого Gllacy</h1>
+		<h1 class="visually-hidden title">Магазин мороженого Gllacy</h1>
 		<section class="bonus-stuff">
 			<div class="container">
-				<h2 class="hidden-title title">Бонусы и акции</h2>
+				<h2 class="visually-hidden title">Бонусы и акции</h2>
 				<article class="bonus-item">
 					<h3 class="bonus-item-title title">Малинка даром!</h3>
 					<p class="bonus-item-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<button class="button">Хочу варенье!</button>
+					<button type="button" class="button">Хочу варенье!</button>
 				</article>
 				<article class="bonus-item">
 					<h3 class="bonus-item-title title">Шоколадки даром!</h3>
 					<p class="bonus-item-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-					<button class="button">Хочу шоколадки!</button>
+					<button type="button" class="button">Хочу шоколадки!</button>
 				</article>
 			</div>
 		</section>
 <!--Блок хитов-->
 		<section class="hits-list">
 			<div class="container">
-				<h2 class="hidden-title title">Хиты продаж</h2>
+				<h2 class="visually-hidden title">Хиты продаж</h2>
 				<ul class="catalog-list">
 					<li class="hit catalog-item">
 						<a href="#">
@@ -104,7 +104,7 @@
 							<p class="catalog-price">310<span class="ruble-icon">рублей</span><span class="weight">/кг</span></p>
 							<h3 class="catalog-title title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
 						</a>
-						<button class="button button-catolog">Быстрый просмотр</button>	
+						<button type="button" class="button button-catolog">Быстрый просмотр</button>	
 					</li>
 					<li class="hit catalog-item">
 						<a href="#">
@@ -114,7 +114,7 @@
 							<p class="catalog-price">380<span class="ruble-icon"></span><span class="weight">/кг</span></p>
 							<h3 class="catalog-title title">Сливочно-кофейное с кусочками шоколада</h3>
 						</a>
-						<button class="button">Быстрый просмотр</button>
+						<button type="button" class="button">Быстрый просмотр</button>
 					</li>
 					<li class="hit catalog-item">
 						<a href="#">
@@ -124,7 +124,7 @@
 							<p class="catalog-price">355<span class="ruble-icon"></span><span class="weight">/кг</span></p>
 							<h3 class="catalog-title title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
 						</a>
-						<button class="button button-catolog">Быстрый просмотр</button>
+						<button type="button" class="button button-catolog">Быстрый просмотр</button>
 					</li>
 					<li class="hit catalog-item">
 						<a href="#">
@@ -134,7 +134,7 @@
 							<p class="catalog-price">415<span class="ruble-icon"></span><span class="weight">/кг</span></p>
 							<h3 class="catalog-title title">Сливочное крем-брюле с карамельной подливкой</h3>
 						</a>
-						<button class="button button-catolog">Быстрый просмотр</button>
+						<button type= "button" class="button button-catolog">Быстрый просмотр</button>
 					</li>
 				</ul>
 			</div>
@@ -148,7 +148,7 @@
 						<li class="icecream-icon">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
 						<li class="leaf-icon">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
 						<li class="cow-icon">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</li>
-						<li class="thermometer-icon">оставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вку</li>
+						<li class="thermometer-icon">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вку</li>
 					</ul>
 				</div>
 			</div>
@@ -161,29 +161,30 @@
 					<h3 class="blog-news-title title"><a class="blog-news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a><h3>
 				</article>
 				<div class="subscribe">
-					<form action="/echo" method="post">
-						<label for="subscribe-input">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</label><br>
-						<input type="email" name="subscribe-field" id="subscribe-input" placeholder="Электронная почта">
-						<button class="button">Отправить</button>
+					<form class= "subscribe-form" action="/echo" method="post">
+						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+						<p><label for="subscribe-input">Электронная почта</label></p>
+						<p><input type="email" name="subscribe-field" id="subscribe-input" placeholder="Электронная почта">
+						<button type="submit" class="button">Отправить</button></p>
 					</form>
 				</div>
 			</div>
 		</section>
 <!-- Контакты и карта -->
 		<section class="contacts">
-			<div class="contacts-map" id="yandexMap" style="height:428px;">
-			Карта
+			<div class="contacts-map" id="yandexMap">
+			<img src="img/map.png" width="100%" alt="Мы находимся по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 			</div>
 			<div class="container">
 				<div class="contacts-block">
 					<p class="contacts-caption">
 						Адрес главного офиса и офлайн-магазина:<br>
 							<span class="contacts-caption-strong">ул. Большая Конюшенная 19/8, Санкт-Петербург</span><br>
-						Адрес главного офиса и офлайн-магазина:<br>
+						Для заказов по телефону:<br>
 							<span class="contacts-caption-strong"><a href="tel:+78124502525">8 812 450-25-25</a></span><br>
 						(с 10 до 20 ежедневно)
 					</p>
-					<button class="button feedback-button" id="feedback-form">Форма обратной связи</button>
+					<button type="button" class="button feedback-button" id="feedback-form">Форма обратной связи</button>
 				</div>
 			</div>
 		</section>
@@ -193,10 +194,10 @@
 		<div class="container">
 			<div class="social-block">
 				<ul class="social-links">
-					<li class="twiter-icon"><a href="#" target="_blank"><img src="img/twitter-icon.svg" alt="Twitter" width="32" height="32">Twitter</a></li>
-					<li class="instagram-icon"><a href="#" target="_blank"><img src="img/instagram-icon.svg" alt="Instagram" width="32" height="32">Instagram</a></li>
-					<li class="facebook-icon"><a href="#" target="_blank"><img src="img/facebook-icon.svg" alt="Facebook" width="32" height="32">Facebook</a></li>
-					<li class="vk-icon"><a href="#" target="_blank"><img src="img/vk-icon.svg" alt="Вконтакте" width="32" height="32">Вконтакте</a></li>
+					<li class="twiter-icon"><a href="#" target="_blank"><img src="img/twitter-icon.svg" alt="Twitter" width="32" height="32"><span class="visually-hidden">Twitter</span></a></li>
+					<li class="instagram-icon"><a href="#" target="_blank"><img src="img/instagram-icon.svg" alt="Instagram" width="32" height="32"><span class="visually-hidden">Instagram</span></a></li>
+					<li class="facebook-icon"><a href="#" target="_blank"><img src="img/facebook-icon.svg" alt="Facebook" width="32" height="32"><span class="visually-hidden">Facebook</span></a></li>
+					<li class="vk-icon"><a href="#" target="_blank"><img src="img/vk-icon.svg" alt="Вконтакте" width="32" height="32"><span class="visually-hidden">Вконтакте</span></a></li>
 				</ul>
 			</div>
 			<div class="footer-info">
@@ -216,37 +217,37 @@
 	
 <!--Окно поиска-->
 	<div class="modal modal-search">
-		<form action="https://echo.htmlacademy.ru/" method="get">
-			<input type="text" name="search" placeholder="Что ищем?">
+		<form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+			<label>Что ищем?<input type="text" name="search" placeholder="Что ищем?"></label>
 		</form>
 	</div>
-<!--Окно входа-->
-	<div class="modal modal-enter">
-		<form action="https://echo.htmlacademy.ru/" method="post">
-			<input type="email" name="email" placeholder="Электронная почта" required>
-			<input type="password" name="password" placeholder="Пароль" required>
-			<button class="button">Войти</button>
-			<section class="help">
-				<ul class="enter-help">
-					<li><a href="#">Забыли пароль?</a></li>
-					<li><a href="#">Новая регистрация</a></li>
-				</ul>
-			</section>
-		</form>
-	</div>
-<!--Форма обратной связи
+<!--Окно входа--
 
-Формам надо задавать классы или хватит того, что классы есть у дивов, в которых они лежат?
+Форму лучше закрыть до секции, да? может и секция тут не нужна? Кажется, что не нужна. 
+
 
 -->
-	<div class="modal modal-feedback">
-		<form action="https://echo.htmlacademy.ru/" method="post">
-			<h2 class="feedback-caption">Мы обязательно вам ответим!</h2>
-			<p><input type="text" name="feedback-name" placeholder="Как вас зовут?"></p>
-			<p><input type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required></p>
-			<p><textarea name="feedback-text" placeholder="Напишите что-нибудь..." rows="5"></textarea></p>
-			<button class="button">Отправить</button>
+	<div class="modal modal-enter">
+		<form class="form-enter" action="https://echo.htmlacademy.ru/" method="post">
+			<label>Электронная почта<input type="email" name="email" placeholder="Электронная почта" required><br>
+			<label>Пароль<input type="password" name="password" placeholder="Пароль" required></label><br>
+			<button type="submit" class="button">Войти</button>
+			<ul class="enter-help">
+				<li><a href="#">Забыли пароль?</a></li>
+				<li><a href="#">Новая регистрация</a></li>
+			</ul>
 		</form>
+	</div>
+<!--Форма обратной связи-->
+	<div class="modal modal-feedback">
+		<form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+			<h2 class="feedback-caption">Мы обязательно вам ответим!</h2>
+			<p><label class="visually-hidden">Как вас зовут? <input type="text" name="feedback-name" placeholder="Как вас зовут?"></label></p>
+			<p><label class="visually-hidden">Ваша почта для ответа?<input type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required></label></p>
+			<p><label class="visually-hidden">Напишите что-нибудь...<textarea name="feedback-text" placeholder="Напишите что-нибудь..." rows="5"></textarea><label class="visually-hidden"></p>
+			<button type="submit" class="button">Отправить</button>
+		</form>
+		<button type="button" class="close-modal"><span class="visually-hidden">Закрыть</span></button>
 	</div>
 	
 <!--Скрипт для карты -->
