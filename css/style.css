@@ -42,7 +42,7 @@ a:active{
 }
 
 
-/* 
+
 .menu-list a{
 	display: block;
 	margin-top: 5px;
@@ -114,7 +114,7 @@ a:active{
 
 .menu-list li:hover > .submenu-list{
 	display: block;
-} */
+}
 
 .button{
 	display: block;
