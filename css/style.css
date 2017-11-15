@@ -1,13 +1,11 @@
 body{
 	margin:0;
 	padding: 0;
-	
 	font-family: "Roboto", Tahoma, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
 	color: #ffffff;
-	
 	background-color:#849d8f;
 }
 
@@ -43,8 +41,11 @@ a:active{
 	list-style: none;
 }
 
+
+/* 
 .menu-list a{
 	display: block;
+	margin-top: 5px;
 	
 }
 
@@ -52,16 +53,26 @@ a:active{
 	position: relative;
 	display: inline-block;
 	margin-left: 30px;
-	margin-bottom: 5px;
 	height: 32px;
-	height: 32px;
+	padding: 0 14px;
 	
+}
+
+.menu-list > li:hover{
+	background-color: #ffffff;
+	border-radius: 16px;
+}
+
+.menu-list > li a:hover{
+	color: #000000;
+	font-weight: 700;
+	border: none;
 }
 
 .submenu-list{
 	position: absolute;
 	left: -7px;
-	top: 30px;
+	top: 35px;
 	width: 150px;
 	height: 171px;
 	
@@ -74,10 +85,9 @@ a:active{
 
 .submenu-list a{
 	height: 24px;
-	padding-left: 20px;
+	padding-left: 13px;
 	margin: 4px 5px;
 	padding-top: 2px;
-	
 	color: #000000;
 }
 
@@ -104,17 +114,15 @@ a:active{
 
 .menu-list li:hover > .submenu-list{
 	display: block;
-}
+} */
 
 .button{
 	display: block;
 	padding: 10px 20px;
-	
 	font-size: 18px;
 	font-weight: 700;
 	color: #ffffff;
 	text-shadow: 2px 0 5px rgba(160, 32, 11, 0.76);
-	
 	background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 	border: none;
@@ -138,13 +146,11 @@ a:active{
 	padding: 0;
 	height: 32px;
 	border-radius: 16px;
-	
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 16px;
 	text-align: left;
 	text-shadow: none;
-	
 	background-color: rgba(255, 255, 255, 0.2);
 	background-image: none;
 	background-repeat: no-repeat;
@@ -172,7 +178,6 @@ a:active{
 .header-buttons .button-enter{
 	width: 93px;
 	padding-left: 45px;
-
 	background-image: url("../img/enter-icon.svg");
 	background-position: 16px 50%;
 }
@@ -180,7 +185,6 @@ a:active{
 .header-buttons .button-enter:hover,
 .header-buttons .button-enter:focus{
 	background-image: url("../img/enter-black-icon.svg");
-	
 }
 
 .header-buttons .button-cart{
@@ -194,5 +198,52 @@ a:active{
 .header-buttons .button-cart:hover,
 .header-buttons .button-cart:focus{
 	background-image: url("../img/cart-black-icon.svg");
-	
+}
+
+.header-contacts .header-schedule{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.header-contacts .header-phone {
+	font-size: 22px;
+	font-weight: 700;
+	border-bottom: none;
+	background-position: 50% 0;
+}
+
+.slides .slide{
+	height: 880px;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+
+
+.slides .slide-1{
+	background-image: url("../img/slide-1.png");
+}
+
+.slides .slide-2{
+	background-image: url("../img/slide-2.png");
+}
+
+.slides .slide-3{
+	background-image: url("../img/slide-3.png");
+	background-repeat: no-repeat;
+}
+
+.slide .slider-title{
+	font-size: 60px;
+	line-height: 64px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.slide .button-slider{
+	height: 64px;
+	width: 280px;
+	font-size: 32px;
+	border-radius: 32px;
 }
