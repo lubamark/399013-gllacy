@@ -247,3 +247,34 @@ a:active{
 	font-size: 32px;
 	border-radius: 32px;
 }
+
+.bonus-stuff .bonus-item{
+	height: 232px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	border-radius: 15px;
+}
+
+.bonus-item .bonus-item-title{
+	font-size: 35px;
+	font-weight: 700px;
+}
+
+.bonus-item .bonus-item-description{
+	font-size: 18px;
+	font-weight: 700px;
+}
+
+.bonus-item  .button{
+	border-radius: 23px;
+}
+
+.bonus-stuff .bonus-1{
+	background-color: #761326;
+	background-image: url("../img/raspberries.jpg");
+}
+
+.bonus-stuff .bonus-2{
+	background-color: #422a20;
+	background-image: url("../img/chocolate.jpg");
+}
