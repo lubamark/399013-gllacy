@@ -160,14 +160,15 @@
 			<div class="container">
 				<article class="blog-news">
 					<p class="blog-news-caption">Новое в нашем блоге</p>
-					<h3 class="blog-news-title title"><a class="blog-news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a><h3>
+					<h3 class="blog-news-title title"><a class="blog-news-link" href="#">10 способов сервировки <br>фруктовых щербетов к <br>столу</a><h3>
 				</article>
 				<div class="subscribe">
+					<p class="subscribe-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 					<form class= "subscribe-form" action="/echo" method="post">
-						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-						<p><label for="subscribe-input">Электронная почта</label></p>
-						<p><input type="email" name="subscribe-field" id="subscribe-input" placeholder="Электронная почта">
-						<button type="submit" class="button">Отправить</button></p>
+						<p>
+						<input type="email" name="subscribe-field" id="subscribe-input" placeholder="Электронная почта">
+						<label class="subscribe-label" for="subscribe-input">Электронная почта</label>
+						<button type="submit" class="button button-subscribe">Отправить</button></p>
 					</form>
 				</div>
 			</div>

@@ -48,6 +48,7 @@ a:active{
 
 .menu-list .menu-link{
 	display: inline-block;
+	font-weight: 700;
 	
 }
 .menu-list > .menu-item {
@@ -70,7 +71,6 @@ a:active{
 
 .menu-item:hover .menu-link{
 	color: #000000;
-	font-weight: 700;
 	border-color:#ffffff;
 }
 
@@ -469,6 +469,104 @@ a:active{
 
 .gllacy-info-list .thermometer-icon::before{
 	background: url("../img/thermometer-icon.svg") no-repeat 0 0;
+}
+
+/* Новое в блоге */
+
+.blog-news{
+	min-height: 220px;
+	margin-bottom: 40px;
+	padding: 25px 20px;
+	
+	color: #323232;
+	background-color: #ffffff;
+	background: url("../img/blog-news-back.jpg") no-repeat 0 0;
+	border-radius: 15px;
+}
+
+.blog-news-caption{
+	margin-bottom: 10px;
+	
+	color: #323232;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+}
+
+/*здесь же явно имитируется обтекание картинки с помощью br? Интересно, если убрать висячий к, это же не будет косяком? 
+
+как сделать нижний бордер повыше? если сверяться с дизайном, то 
+text-decoration: underline; здесь ближе, но ему нельзя задать прозрачность.
+
+*/
+
+.blog-news-link{
+	color: #323232;
+	font-size: 24px;
+	line-height: 30px;
+	border-bottom: 2px solid rgba(50, 50, 50, 0.8);
+}
+
+/* Подписка */
+
+.subscribe{
+	min-height: 220px;
+	margin-bottom: 40px;
+	padding: 40px 25px;
+	
+	color: #5a5a5a;
+	background-color: #ffffff;
+	border-radius: 15px;
+	border: 5px solid #ffffff;
+
+	
+	border-image-source: repeating-linear-gradient(135deg, #ffffff 0px, #ffffff 5px, #92cdff 5px, #92cdff 10px, #ffffff 15px, #ffffff 20px, #fe9e90 25px, #fe9e90 30px);
+	border-image-repeat: repeat;
+	border-image-slice: 5px;
+}
+
+.subscribe-form{
+	position: relative;
+}
+
+.subscribe-description{
+	margin-bottom: 40px;
+	
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+}
+
+#subscribe-input{
+	padding: 10px 15px;
+
+	border-radius: 5px;
+	font-size: 16px;
+	border: 1px solid rgba(178, 178, 178, 0.5);
+}
+
+.subscribe-label{
+	position: absolute;
+	top: -20px;
+	left: 0;
+
+	padding-left: 15px;
+	visibility: hidden;
+}
+
+#subscribe-input:focus +.subscribe-label{
+	visibility: visible;
+}
+
+.button-subscribe{
+	padding: 11px 20px;
+	margin-left: 10px;
+	
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	
+	border-radius: 23px;
 }
 
 
