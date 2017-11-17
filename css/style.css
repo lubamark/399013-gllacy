@@ -282,6 +282,8 @@ a:active{
 	border-radius: 32px;
 }
 
+/* Бонусы */
+
 .bonus-stuff .bonus-item{
 	padding: 25px 20px;
 	background-repeat: no-repeat;
@@ -292,11 +294,13 @@ a:active{
 .bonus-item .bonus-item-title{
 	font-size: 35px;
 	font-weight: 700px;
+	margin-bottom: 20px;
 }
 
 .bonus-item .bonus-item-description{
 	font-size: 18px;
 	font-weight: 700px;
+	margin-bottom: 45px;
 }
 
 .bonus-item .button{
@@ -314,15 +318,49 @@ a:active{
 	background-image: url("../img/chocolate.jpg");
 }
 
+.button-bonus{
+	padding: 13px 17px;
+}
+
 /*Карточки товаров*/
 
 .catalog-item{
-	padding: 5px 13px;
+	padding: 5px 13px 20px 13px;
+	border-radius: 5px;
 }
 
-.catalog-item img{
-	border-radius: 50%;
+.catalog-item:hover,
+.catalog-item:focus{
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4)
 }
+
+.catalog-item:hover > .button-catolog,
+.catalog-item:focus > .button-catolog{
+	visibility: visible;
+}
+
+.hit .catalog-photo{
+	position: relative;
+}
+
+.catalog-photo img{
+	border-radius: 50%;
+	background-color: pink;
+}
+
+/*корректнее будет сделать background-size и 60 пикселей? здесь же мы прибиваем высоту и ширину, это же ок? или тоже паддинги?*/
+
+.hit .catalog-photo::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 61px; 
+	height: 61px;
+	background: url("../img/hit.svg") no-repeat 0 0; 
+}
+
 
 .catalog-price,
 .catalog-price:hover{
@@ -340,7 +378,7 @@ a:active{
 	background-image: url("../img/ruble-icon.svg");
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: 0 10px;
+	background-position: 0 15px;
 	
 }
 
@@ -348,19 +386,89 @@ a:active{
 	font-size: 30px;
 }
 
-.catalog-title{
-	display: inline;
-	fotn-size: 16px;
-	font-weight: 500;
-	text-align: center;
 
+.catalog-title{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
 }
 
-/* эти кнопки вообще вряд ли будут менять текст. неровный падинг, да, но если делать ровный, несовпадения по 5px по ширине и высоте.  */
+/* эти кнопки вообще вряд ли будут менять текст. неровный падинг, да, но если делать ровный, несовпадения по 5px по ширине и высоте. все равно не фиксируем размеры? */
 
 .button-catolog{
+	display: block;
+	visibility: hidden;
 	padding: 10px 15px; 
+	margin: 10px auto;
 	font-size: 18px;
 	line-height: 20px;
 	border-radius: 20px;
 }
+
+/* Презентационный блок */
+
+.gllacy-info{
+	padding: 20px 25px;
+	margin-bottom: 40px;
+	color: #323232;
+
+	border-radius: 15px;
+	background-color: #eee1c5;
+	background: url("../img/wafer.jpg") repeat 0 0;
+}
+
+.gllacy-info-title{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.gllacy-info-list{
+	margin-top: 15px;
+	margin-left: 55px;
+	font-size: 16px;
+	line-height: 22px;
+	
+	list-style-type: none;
+}
+
+/* если делать так, то не поняла, как выровнять маркер по вертикали, наверное, никак, сделала псевдоэлементами. 
+
+.gllacy-info-list .icecream-icon{
+	list-style-image: url("../img/icecream-icon.svg");
+	list-style-position: outside;
+
+}
+
+*/
+
+.gllacy-info-list li{
+	position: relative;
+}
+
+.gllacy-info-list li::before{
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: -55px;
+	width: 50px;
+	height: 50px;
+}
+
+.gllacy-info-list .icecream-icon::before{
+	background: url("../img/icecream-icon.svg") no-repeat 0 0;
+}
+
+.gllacy-info-list .leaf-icon::before{
+	background: url("../img/leaf-icon.svg") no-repeat 0 0;
+}
+
+.gllacy-info-list .cow-icon::before{
+	background: url("../img/cow-icon.svg") no-repeat 0 0;
+}
+
+.gllacy-info-list .thermometer-icon::before{
+	background: url("../img/thermometer-icon.svg") no-repeat 0 0;
+}
+
+
