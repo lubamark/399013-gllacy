@@ -1,4 +1,8 @@
-* {margin: 0; padding: 0; }
+* {
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;
+}
 
 body{
 	font-family: "Roboto", Tahoma, sans-serif;
@@ -44,6 +48,7 @@ a:active{
 
 .menu-list .menu-link{
 	display: inline-block;
+	
 }
 .menu-list > .menu-item {
 	position: relative;
@@ -52,7 +57,7 @@ a:active{
 	padding: 5px 15px 5px 15px;
 	
 	font-size: 16px;
-	
+	line-height: 20px;
 }
 
 .menu-list > .menu-item:last-child{margin-right: 0;}
@@ -76,7 +81,6 @@ a:active{
 
 .menu-item-current .menu-link{
 	color: #ffffff;
-	font-weight: 700;
 	border-color:#d07058;
 }
 
@@ -157,7 +161,6 @@ a:active{
 /* Кнопки */
 
 .button{
-	padding: 10px 20px;
 	font-size: 18px;
 	font-weight: 700;
 	color: #ffffff;
@@ -274,16 +277,12 @@ a:active{
 }
 
 .slide .button-slider{
-	height: 64px;
-	width: 280px;
+	padding: 15px 35px;
 	font-size: 32px;
 	border-radius: 32px;
 }
 
 .bonus-stuff .bonus-item{
-	box-sizing: border-box;
-	height: 232px;
-	width: 560px;
 	padding: 25px 20px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -315,3 +314,53 @@ a:active{
 	background-image: url("../img/chocolate.jpg");
 }
 
+/*Карточки товаров*/
+
+.catalog-item{
+	padding: 5px 13px;
+}
+
+.catalog-item img{
+	border-radius: 50%;
+}
+
+.catalog-price,
+.catalog-price:hover{
+	color: #ffffff;
+	font-size: 45px;
+	font-weight: 700;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* не очень поняла, как сделать тень иконке,  обводка со сдвигом или пнг взять? */
+
+.ruble-icon{
+	padding-left: 15px;
+	padding-right: 15px;
+	background-image: url("../img/ruble-icon.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 10px;
+	
+}
+
+.weight{
+	font-size: 30px;
+}
+
+.catalog-title{
+	display: inline;
+	fotn-size: 16px;
+	font-weight: 500;
+	text-align: center;
+
+}
+
+/* эти кнопки вообще вряд ли будут менять текст. неровный падинг, да, но если делать ровный, несовпадения по 5px по ширине и высоте.  */
+
+.button-catolog{
+	padding: 10px 15px; 
+	font-size: 18px;
+	line-height: 20px;
+	border-radius: 20px;
+}
