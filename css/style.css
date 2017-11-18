@@ -512,21 +512,27 @@ text-decoration: underline; здесь ближе, но ему нельзя за
 .subscribe{
 	min-height: 220px;
 	margin-bottom: 40px;
-	padding: 40px 25px;
-	
+	padding: 5px;
 	color: #5a5a5a;
-	background-color: #ffffff;
+	background-image: repeating-linear-gradient(135deg, #ffffff 0px, #ffffff 5px, #92cdff 5px, #92cdff 10px, #ffffff 10px, #ffffff 15px, #fe9e90 15px, #fe9e90 20px);
 	border-radius: 15px;
-	border: 5px solid #ffffff;
 
-	
-	border-image-source: repeating-linear-gradient(135deg, #ffffff 0px, #ffffff 5px, #92cdff 5px, #92cdff 10px, #ffffff 15px, #ffffff 20px, #fe9e90 25px, #fe9e90 30px);
+
+	/*сначала делала рамку градиентом, но он не понимает бордер-радиуса и на углах артефакты появляются, так что решила просто подложку, не удаляю на случай, если ты не согласишься
+
+	border-image-source: repeating-linear-gradient(135deg, #ffffff 0px, #ffffff 5px, #92cdff 5px, #92cdff 10px, #ffffff 10px, #ffffff 15px, #fe9e90 15px, #fe9e90 20px);
 	border-image-repeat: repeat;
-	border-image-slice: 5px;
+	border-image-slice: 5;
+
+	*/
 }
 
 .subscribe-form{
 	position: relative;
+	min-height: 210px;
+	padding: 40px 25px;
+	background-color: #ffffff;
+	border-radius: 15px;
 }
 
 .subscribe-description{
@@ -569,4 +575,83 @@ text-decoration: underline; здесь ближе, но ему нельзя за
 	border-radius: 23px;
 }
 
+/* карта */
 
+.contacts{
+	position: relative;
+}
+
+.contacts-map{
+	width: 100%;
+	min-height: 370px;
+}
+
+.contacts-map img{
+	position: absolute;
+}
+
+/*наверное их лучше в один блок запихать с картой? но он в контейнере, а карта нет, загадка.*/
+
+.contacts-block{
+	padding: 30px 20px;
+	
+	background-color: #ffffff;
+	color: #323232;
+	border-radius: 15px;
+}
+
+.contacts-block a{
+	color: #323232;
+	border-color: #ffffff;
+}
+
+
+.contacts-caption{
+	margin-bottom: 25px;
+	
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.contacts-caption-strong{
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.feedback-button{
+	padding: 10px 25px;
+	margin-bottom: 10px;
+	
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 22px;
+}
+
+/* Футер */
+
+.social-links li{
+	display: inline;
+	margin-right: 15px;
+	opacity: 0.8;
+}
+
+.social-links li:hover,
+.social-links li:focus{
+	opacity: 1;
+}
+
+.social-links li:last-child{ margin-right: 0;}
+
+.social-links li a{
+	border-bottom: none;
+	border-radius: 50%;
+
+}
+
+.social-links img{
+	border-radius: 50%;
+	border: 2px solid rgba(255, 255, 255, 0.2)
+	
+}
