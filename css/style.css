@@ -335,12 +335,12 @@ a:active{
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4)
 }
 
-.catalog-item:hover > .button-catolog,
-.catalog-item:focus > .button-catolog{
+.catalog-item:hover > .button-catalog,
+.catalog-item:focus > .button-catalog{
 	visibility: visible;
 }
 
-.hit .catalog-photo{
+.catalog-photo{
 	position: relative;
 }
 
@@ -395,7 +395,7 @@ a:active{
 
 /* эти кнопки вообще вряд ли будут менять текст. неровный падинг, да, но если делать ровный, несовпадения по 5px по ширине и высоте. все равно не фиксируем размеры? */
 
-.button-catolog{
+.button-catalog{
 	display: block;
 	visibility: hidden;
 	padding: 10px 15px; 
