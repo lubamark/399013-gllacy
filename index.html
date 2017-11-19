@@ -101,42 +101,42 @@
 				<h2 class="visually-hidden title">Хиты продаж</h2>
 				<ul class="catalog-list">
 					<li class="hit catalog-item">
-						<a href="#">
+						<a class="catalog-link" href="#">
 							<div class="catalog-photo">
 								<img src="img/cream-orange.jpg" alt="хит-1" width="267" height="267">
 							</div>
 							<p class="catalog-price">310<span class="ruble-icon"></span><span class="visually-hidden">рублей</span><span class="weight">/кг</span></p>
-							<h3 class="catalog-title title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+							<h3 class="catalog-title title link">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
 						</a><br>
 						<button type="button" class="button button-catalog">Быстрый просмотр</button>	
 					</li>
 					<li class="hit catalog-item">
-						<a href="#">
+						<a class="catalog-link" href="#">
 							<div class="catalog-photo">
 								<img src="img/cream-coffe.jpg" alt="хит-2" width="267" height="267">
 							</div>
 							<p class="catalog-price">380<span class="ruble-icon"></span><span class="visually-hidden">рублей</span><span class="weight">/кг</span></p>
-							<h3 class="catalog-title title">Сливочно-кофейное с кусочками шоколада</h3>
+							<h3 class="catalog-title title link">Сливочно-кофейное с кусочками шоколада</h3>
 						</a>
 						<button type="button" class="button button-catalog">Быстрый просмотр</button>
 					</li>
 					<li class="hit catalog-item">
-						<a href="#">
+						<a class="catalog-link" href="#">
 							<div class="catalog-photo">	
 								<img src="img/cream-srawberry.jpg" alt="хит-3" width="267" height="267">
 							</div>
 							<p class="catalog-price">355<span class="ruble-icon"></span><span class="visually-hidden">рублей</span><span class="weight">/кг</span></p>
-							<h3 class="catalog-title title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+							<h3 class="catalog-title title link">Сливочно-клубничное с присыпкой из белого шоколада</h3>
 						</a>
 						<button type="button" class="button button-catalog">Быстрый просмотр</button>
 					</li>
 					<li class="hit catalog-item">
-						<a href="#">
+						<a class="catalog-link" href="#">
 							<div class="catalog-photo">	
 								<img src="img/cream-caramel.jpg" alt="хит-4" width="267" height="267">
 							</div>
 							<p class="catalog-price">415<span class="ruble-icon"></span><span class="visually-hidden">рублей</span><span class="weight">/кг</span></p>
-							<h3 class="catalog-title title">Сливочное крем-брюле с карамельной подливкой</h3>
+							<h3 class="catalog-title title link">Сливочное крем-брюле с карамельной подливкой</h3>
 						</a>
 						<button type= "button" class="button button-catalog">Быстрый просмотр</button>
 					</li>
@@ -165,11 +165,11 @@
 				<div class="subscribe">
 						<form class= "subscribe-form" action="/echo" method="post">
 							<p class="subscribe-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-						<p>
-							<input type="email" name="subscribe-field" id="subscribe-input" placeholder="Электронная почта">
-							<label class="subscribe-label" for="subscribe-input">Электронная почта</label>
-							<button type="submit" class="button button-subscribe">Отправить</button>
-						</p>
+							<p class="subscribe-field">
+								<input type="email" name="subscribe-field" id="subscribe-input" placeholder="Электронная почта">
+								<label class="subscribe-label" for="subscribe-input">Электронная почта</label>
+								<button type="submit" class="button button-subscribe">Отправить</button>
+							</p>
 					</form>
 				</div>
 			</div>
@@ -189,7 +189,7 @@
 							<span class="contacts-caption-strong"><a href="tel:+78124502525">8 812 450-25-25</a></span><br>
 							(с 10 до 20 ежедневно)
 					</p>
-					<button type="button" class="button feedback-button" id="feedback-form">Форма обратной связи</button>
+					<button type="button" class="button feedback-button" id="feedback-form-button">Форма обратной связи</button>
 				</div>
 			</div>
 		</section>
@@ -207,34 +207,43 @@
 			</div>
 			<div class="footer-info">
 				<ul class="footer-info-list">
-					<li><a href="#">Для поставщиков</a></li>
-					<li><a href="#">О производстве</a></li>
-					<li><a href="#">Наши документы</a></li>
-					<li><a href="#">Экологические стандарты</a></li>
+					<li><a class="link" href="#">Для поставщиков</a></li>
+					<li><a class="link" href="#">О производстве</a></li>
+					<li><a class="link" href="#">Наши документы</a></li>
+					<li><a class="link" href="#">Экологические стандарты</a></li>
 				</ul>
 			</div>
 			<div class="copyright">
 				<img src="img/logo-htmlacademy.svg" alt="HTML Академия" width="108" height="39">
-				<p class="copyright-caption">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> &copy; 2017</p>
+				<p class="copyright-caption">Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> &copy; 2017</p>
 			</div>
 		</div>
 	</footer>
 	
 <!--Окно поиска-->
 	<div class="modal modal-search">
-		<form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-			<label>Что ищем?<input type="text" name="search" placeholder="Что ищем?"></label>
+		<form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
+			<p>
+				<input class="modal-input modal-input-header" type="text" name="search" id="search" placeholder="Что ищем?">
+				<label class="modal-label" for="search">Что ищем?</label>
+			</p>
 		</form>
 	</div>
 <!--Окно входа---->
 	<div class="modal modal-enter">
 		<form class="form-enter" action="https://echo.htmlacademy.ru/" method="post">
-			<label>Электронная почта<input type="email" name="email" placeholder="Электронная почта" required><br>
-			<label>Пароль<input type="password" name="password" placeholder="Пароль" required></label><br>
-			<button type="submit" class="button">Войти</button>
+			<p>
+			<input class="modal-input modal-input-header" type="email" name="email" placeholder="Электронная почта" required>
+			<label class="modal-label">Электронная почта</label>
+			</p>
+			<p>
+				<input class="modal-input modal-input-header" type="password" name="password" placeholder="Пароль" required>
+				<label class="modal-label">Пароль</label>
+			</p>
+			<button type="submit" class="button button-login">Войти</button>
 			<ul class="enter-help">
-				<li><a href="#">Забыли пароль?</a></li>
-				<li><a href="#">Новая регистрация</a></li>
+				<li><a class="enter-link" href="#">Забыли пароль?</a></li>
+				<li><a class="enter-link" href="#">Новая регистрация</a></li>
 			</ul>
 		</form>
 	</div>
@@ -242,10 +251,10 @@
 	<div class="modal modal-feedback">
 		<form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
 			<h2 class="feedback-caption">Мы обязательно вам ответим!</h2>
-			<p><label class="visually-hidden">Как вас зовут? <input type="text" name="feedback-name" placeholder="Как вас зовут?"></label></p>
-			<p><label class="visually-hidden">Ваша почта для ответа?<input type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required></label></p>
-			<p><label class="visually-hidden">Напишите что-нибудь...<textarea name="feedback-text" placeholder="Напишите что-нибудь..." rows="5"></textarea><label class="visually-hidden"></p>
-			<button type="submit" class="button">Отправить</button>
+			<p><label>Как вас зовут? <input class="modal-input" type="text" name="feedback-name" placeholder="Как вас зовут?"></label></p>
+			<p><label>Ваша почта для ответа?<input class="modal-input" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required></label></p>
+			<p><label>Напишите что-нибудь...<textarea class="modal-input" name="feedback-text" placeholder="Напишите что-нибудь..." rows="5"></textarea><label class="visually-hidden"></p>
+			<button type="submit" class="button button-feedback-form">Отправить</button>
 		</form>
 		<button type="button" class="close-modal"><span class="visually-hidden">Закрыть</span></button>
 	</div>

@@ -14,9 +14,20 @@ body{
 }
 
 a{
-	color: #ffffff;
 	text-decoration: none;
-	border-bottom: 1px solid rgba(255,255,255,0.3);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+.link{
+	color: #ffffff;
+	border-bottom-color:(255,255,255,0.3);
+}
+
+.link:hover,
+.link:focus{
+	color: #ffbc9e;
+	border-bottom-color: rgba(255, 188, 158, 0.3);
 }
 
 .visually-hidden{
@@ -345,6 +356,10 @@ a{
 	border-radius: 5px;
 }
 
+.catalog-link{
+	border-bottom: none;
+}
+
 .catalog-item:hover,
 .catalog-item:focus{
 	background-color: rgba(255, 255, 255, 0.2);
@@ -362,7 +377,6 @@ a{
 
 .catalog-photo img{
 	border-radius: 50%;
-	background-color: pink;
 }
 
 .hit .catalog-photo::before{
@@ -406,6 +420,8 @@ a{
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 500;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
 }
 
 .button-catalog{
@@ -515,11 +531,14 @@ a{
 }
 
 .subscribe-form{
-	position: relative;
 	min-height: 210px;
 	padding: 40px 25px;
 	background-color: #ffffff;
 	border-radius: 15px;
+}
+
+.subscribe-field{
+	position: relative;
 }
 
 .subscribe-description{
@@ -579,6 +598,8 @@ a{
 
 .contacts-map img{
 	position: absolute;
+	width: 100%;
+	overflow: hidden;
 }
 
 .contacts-block{
@@ -586,7 +607,7 @@ a{
 	padding: 30px 20px;
 	margin: 60px 0;
 	
-	background-color: #ffffff;
+	background-color: #f8f7f4;
 	color: #323232;
 	border-radius: 15px;
 }
@@ -686,3 +707,77 @@ a{
 	line-height: 18px;
 }
 
+/* Модальные окна */
+
+.modal{
+	color: #323232;
+	background-color: #f8f7f4;
+}
+
+.modal-feedback{
+	padding: 20px 25px;
+	border-radius: 10px;
+}
+
+.modal-search{
+	padding: 20px 15px;
+	border-radius: 5px;
+}
+
+.modal-enter{
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.modal-input{
+	padding: 10px 15px;
+	line-height: 22px;
+	font-weight: 400;
+	border: 1px solid rgba(178, 178, 178, 0.5);
+	border-radius: 5px;
+}
+
+.modal-input-header{
+	font-size: 14px;
+}
+
+.form-search,
+.form-enter{
+	font-size: 14px;
+}
+
+.button-login{
+	padding: 10px 25px;
+	
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 22px;
+}
+
+.enter-help{
+	list-style: none;
+}
+
+.enter-link{
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #323232;
+	border-bottom-color: (0, 0, 0, 0.3);
+}
+
+
+.button-feedback-form{
+	padding: 10px 20px;
+	
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 22px;
+}
+
+.close-modal{
+	padding: 10px;
+	background: #f8f7f4 url("../img/close-icon.svg") no-repeat 0 0;
+	
+	border: none;
+}
