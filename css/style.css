@@ -1,6 +1,10 @@
-* {
+*, *::before, ::after{
 	margin: 0; 
 	padding: 0; 
+	box-sizing: inherit;
+}
+
+html{
 	box-sizing: border-box;
 }
 
@@ -15,19 +19,17 @@ body{
 
 a{
 	text-decoration: none;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
 }
 
 .link{
 	color: #ffffff;
-	border-bottom-color:(255,255,255,0.3);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 .link:hover,
 .link:focus{
 	color: #ffbc9e;
-	border-bottom-color: rgba(255, 188, 158, 0.3);
+	border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
 .visually-hidden{
@@ -41,32 +43,52 @@ a{
 	overflow: hidden;
 }
 
+.container{
+	max-width: 1146px;
+	min-width: 860px;
+	padding: 0 2.25%;
+	margin: 0 auto;
+}
+
 .menu ul,
 .menu-list,
-.header-buttons{
+.header-buttons-list{
 	list-style: none;
 }
 
-/*убрать при верстке шапки, это чтобы было видно как субменю заходит за главное меню*/
-.menu-list {	margin-left: 40px;}
+.menu{
+	display: flex;
+	min-height: 70px;
+	align-items: center;
+}
+
+.logo{
+	margin-right: 10px;
+}
+
+/*меню переделаю на флексе тоже, когда вернусь к нему, как поняла, надо крупные блоки раскидать*/
+
+.menu-list {
+	width: 380px;
+	display: flex;
+	justify-content: space-between;
+
+}
 
 .menu-link{
 	display: inline-block;
+	white-space: nowrap;
+	padding: 5px 15px;
+	
+	font-size: 16px;
+	line-height: 20px;
 	color: #ffffff;
 	font-weight: 700;
 }
 
 .menu-item {
 	position: relative;
-	display: inline-block;
-	margin-right: 30px;
-	padding: 5px 15px;
-	
-	font-size: 16px;
-	line-height: 20px;
 }
-
-.menu-item:last-child{margin-right: 0;}
 
 .menu-item:hover,
 .menu-item:focus {
@@ -204,6 +226,14 @@ a{
 
 /* Кнопки в шапке */
 
+.header-buttons-list{
+	margin-left: auto;
+	min-width: 260px;
+	max-width: 265px;
+	display: flex;
+	justify-content: space-between;
+}
+
 .header-buttons{
 	color: #ffffff;
 	font-size: 14px;
@@ -286,7 +316,7 @@ a{
 	background-position: 50% 0;
 }
 
-/* Слайды, пока не буду дооформлять, в целом поняла что делать, курсы посмотрю еще по этим штучкам, вернусь к ним.*/
+/* Слайды, пока не буду дооформлять, в целом поняла что делать, курсы посмотрю еще по этим штучкам, вернусь к ним. Закоментила, чтобы не листать простыню*/
 
 .slide{
 	position: relative;
