@@ -21,6 +21,13 @@ a{
 	text-decoration: none;
 }
 
+.menu ul,
+.menu-list,
+.header-buttons-list,
+.catalog-list{
+	list-style: none;
+}
+
 .link{
 	color: #ffffff;
 	border-bottom: 1px solid rgba(255,255,255,0.3);
@@ -44,17 +51,13 @@ a{
 }
 
 .container{
-	max-width: 1146px;
-	min-width: 860px;
-	padding: 0 2.25%;
+	max-width: 1200px;
+	min-width: 900px;
+	padding: 0 25px;
 	margin: 0 auto;
 }
 
-.menu ul,
-.menu-list,
-.header-buttons-list{
-	list-style: none;
-}
+
 
 .menu{
 	display: flex;
@@ -302,6 +305,16 @@ a{
 	background-image: url("../img/cart-icon-active.svg");
 }
 
+.header-contacts{
+	position: relative;
+	min-height: 50px;
+}
+
+.header-contacts-wrap{
+	position: absolute;
+	right: 0;
+}
+
 .header-schedule{
 	font-size: 14px;
 	font-weight: 700;
@@ -355,7 +368,17 @@ a{
 
 /* Бонусы */
 
+.bonus-stuff .container{
+	display: flex;
+	justify-content: space-between;
+}
+
 .bonus-item{
+	display: flex;
+	flex-direction: column;
+	min-width: 420px;
+	max-width: 560px;
+	min-height: 230px;
 	padding: 25px 20px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -371,10 +394,10 @@ a{
 .bonus-item-description{
 	font-size: 18px;
 	font-weight: 700px;
-	margin-bottom: 45px;
 }
 
 .bonus-1{
+	margin-right: 2.25%;
 	background-color: #761326;
 	background-image: url("../img/raspberries.jpg");
 }
@@ -386,15 +409,39 @@ a{
 }
 
 .button-bonus{
+	margin-left: auto;
+	margin-top: auto;
 	padding: 13px 17px;
 	border-radius: 25px;
 }
 
-/*Карточки товаров*/
+/*Карточки товаров
+
+Почему не влазят карточки в каталоге? (внутри)
+
+*/
+
+.catalog-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.catalog-hit-list{
+	flex-wrap: nowrap;
+}
 
 .catalog-item{
+	max-width: 293px;
+	min-width: 220px;
 	padding: 5px 13px 20px 13px;
 	border-radius: 5px;
+}
+
+.catalog-photo{
+	min-width: 200px;
+	min-height: 200px;
+	max-width: 267px;
+	max-height: 267px;
 }
 
 .catalog-link{
@@ -439,8 +486,6 @@ a{
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* я бы лучше запилила svg один под другой, в картинках есть вариант ruble-icon-cover, хотя думаю всем пофиг */
-
 .ruble-icon{
 	padding: 0 15px;
 
@@ -457,7 +502,8 @@ a{
 
 
 .catalog-title{
-	display: inline-block;
+	display: inline;
+
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 500;
@@ -478,7 +524,7 @@ a{
 /* Презентационный блок */
 
 .gllacy-info{
-	padding: 20px 25px;
+	padding: 20px 25px 0 25px;
 	margin-bottom: 40px;
 	color: #323232;
 
@@ -491,26 +537,37 @@ a{
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 500;
+	margin-bottom: 15px;
 }
 
 .gllacy-info-list{
-	margin-top: 15px;
-	margin-left: 55px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	font-size: 16px;
 	line-height: 22px;
 	
 	list-style-type: none;
 }
 
-.gllacy-info-list li{
+.info-list-item{
 	position: relative;
+	padding-left: 60px;
+	max-width: 540px;
+	min-width: 400px;
+	margin-bottom: 30px;
 }
 
-.gllacy-info-list li::before{
+.info-list-item:nth-child(2n+1){
+	margin-right: 20px;
+}
+
+
+.info-list-item::before{
 	content: "";
 	position: absolute;
 	top: -10px;
-	left: -55px;
+	left: 0px;
 	width: 50px;
 	height: 50px;
 }
