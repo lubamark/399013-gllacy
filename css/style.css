@@ -593,16 +593,25 @@ a{
 	background: url("../img/thermometer-icon.svg") no-repeat 0 0;
 }
 
+/* Блог и подписка*/
+
+.blog-and-subscribe .container{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
 /* Новое в блоге */
 
 .blog-news{
-	min-height: 220px;
-	margin-bottom: 40px;
+	flex-basis: 50%;
+
+	margin-right: 20px;
 	padding: 25px 20px;
 	
 	color: #323232;
-	background-color: #ffffff;
-	background: url("../img/blog-news-back.jpg") no-repeat 0 0;
+	background: #ffffff url("../img/blog-news-back.jpg") no-repeat bottom 0 right 0;
+	background-size: cover;
 	border-radius: 15px;
 }
 
@@ -619,14 +628,15 @@ a{
 	color: #323232;
 	font-size: 24px;
 	line-height: 30px;
-	border-bottom: 2px solid rgba(50, 50, 50, 0.8);
+	text-decoration: underline;
+	background-color: rgba(255, 255, 255, 0.8);
+	
 }
 
 /* Подписка */
 
 .subscribe{
-	min-height: 220px;
-	margin-bottom: 40px;
+	flex-basis: 50%;
 	padding: 5px;
 	color: #5a5a5a;
 	background-image: repeating-linear-gradient(135deg, #ffffff 0px, #ffffff 5px, #92cdff 5px, #92cdff 10px, #ffffff 10px, #ffffff 15px, #fe9e90 15px, #fe9e90 20px);
@@ -634,8 +644,7 @@ a{
 }
 
 .subscribe-form{
-	min-height: 210px;
-	padding: 40px 25px;
+	padding: 30px 25px;
 	background-color: #ffffff;
 	border-radius: 15px;
 }
@@ -652,7 +661,7 @@ a{
 	font-weight: 400;
 }
 
-#subscribe-input{
+.subscribe-input-class{
 	padding: 10px 15px;
 
 	border-radius: 5px;
@@ -669,7 +678,7 @@ a{
 	visibility: hidden;
 }
 
-#subscribe-input:focus +.subscribe-label{
+.subscribe-input-class:focus +.subscribe-label{
 	visibility: visible;
 }
 
@@ -688,7 +697,7 @@ a{
 
 .contacts{
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 	
 	min-height: 430px;
 }
@@ -705,8 +714,14 @@ a{
 	overflow: hidden;
 }
 
+.contacts .container{
+	position: relative;
+}
+
 .contacts-block{
-	float: right;
+	position: absolute;
+	right: 0;
+	
 	padding: 30px 20px;
 	margin: 60px 0;
 	
@@ -715,10 +730,7 @@ a{
 	border-radius: 15px;
 }
 
-.contacts-block::after{
-	content: "";
-	clear: right;
-}
+
 
 .contacts-block a{
 	color: #323232;
