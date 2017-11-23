@@ -24,7 +24,9 @@ a{
 .menu ul,
 .menu-list,
 .header-buttons-list,
-.catalog-list{
+.catalog-list,
+.social-links,
+.footer-info-list{
 	list-style: none;
 }
 
@@ -732,7 +734,9 @@ a{
 
 
 
-.contacts-block a{
+.contacts-caption-strong a,
+.contacts-caption-strong a:hover,
+.contacts-caption-strong a:active{
 	color: #323232;
 	border-color: #ffffff;
 }
@@ -761,20 +765,28 @@ a{
 
 /* Футер */
 
-.social-links li{
+.page-footer .container{
+	display: flex;
+	margin-bottom: 20px;
+
+	align-items: center;
+	justify-content: space-between;
+}
+
+.social-item{
 	display: inline;
 	margin-right: 15px;
 	opacity: 0.8;
 }
 
-.social-links li:hover,
-.social-links li:focus{
+.social-item:hover,
+.social-item:focus{
 	opacity: 1;
 }
 
-.social-links li:last-child{ margin-right: 0;}
+.social-item:last-child{ margin-right: 0;}
 
-.social-links li a{
+.social-item a{
 	border-bottom: none;
 	border-radius: 50%;
 }
@@ -784,29 +796,31 @@ a{
 	border: 2px solid rgba(255, 255, 255, 0.2)
 }
 
-.social-links li:active img{
+.social-item :active img{
 	filter: brightness(85%);
 }
 
-/*убрать при верстке футера, сделала, чтобы выровнять сердечко*/
-
-.footer-info-list{ margin-left: 40px;}
-
 .footer-info-list{
-	list-style: none;
-	
+	display: flex;
+	max-width: 350px;
+	white-space: nowrap;
 	color: #ffffff;
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
 }
 
-.footer-info-list li:first-child{
+.footer-info-item{
+	margin-right: 30px;
+	max-width: 180px;
+}
+
+.footer-info-heart{
 	position: relative;
 	font-weight: 700;
 }
 
-.footer-info-list li:first-child:before{
+.footer-info-heart::before{
 	content: "";
 	position: absolute;
 	top:2px;
