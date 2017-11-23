@@ -30,19 +30,22 @@
 					<li class="menu-item"><a class="menu-link" href="#">О Компании</a></li>
 				</ul>
 <!--Кнопки в шапке-->
-			<ul class="header-buttons-list">
-				<li><button type="button" class="button-search header-buttons"><span class="visually-hidden">Поиск</span></button></li>
-				<li><button type="button" class="button-enter header-buttons">Вход</button></li>
-				<li><button type="button" class="button-cart cart-active header-buttons">2 товара</button></li>
-			</ul>
-		</nav>
+				<ul class="header-buttons-list">
+					<li><button type="button" class="button-search header-buttons"><span class="visually-hidden">Поиск</span></button></li>
+					<li><button type="button" class="button-enter header-buttons">Вход</button></li>
+					<li><button type="button" class="button-cart cart-active header-buttons">2 товара</button></li>
+				</ul>
+			</nav>
 			<section class="header-contacts">
-				<h2 class="visually-hidden title">Режим работы и контакты</h2>
-				<p class="header-schedule">С <time datetime="10:00">10</time> до <time datetime="20:00">20</time>, ежедневно</p>
-				<a href="tel:+78124502525" class="header-phone">8 812 450-25-25</a>
+				<div class="header-contacts-wrap">
+					<h2 class="visually-hidden title">Режим работы и контакты</h2>
+					<p class="header-schedule">С <time datetime="10:00">10</time> до <time datetime="20:00">20</time>, ежедневно</p>
+					<a class="header-phone" href="tel:+78124502525">8 812 450-25-25</a>
+				</div>
 			</section>
 		</div>
 	</header>
+	
 	<main>
 		<div class="container">
 			<ul class="breadcrumbs-list">
@@ -58,7 +61,7 @@
 				<section class="catalog-filter">
 					<h2 class="visually-hidden title">Поиск по параметрам</h2>
 					<form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-						<fieldset class="catalog-field">
+						<fieldset class="catalog-field catalog-field-sort">
 							<legend class="catalog-legend">Сортировка</legend>
 							<select class="catalog-select" name="filter-sort">
 									<option value="filter-popular">по популярности</option>
@@ -68,19 +71,19 @@
 							</select>
 							</label>
 						</fieldset>
-						<fieldset class="catalog-field">
+						<fieldset class="catalog-field catalog-field-price">
 							<legend class="catalog-legend">Цена: 100 руб. - 500 руб</legend>
 								<input class="catalog-range" type="range" name="filter-price-min" min="0" max="500" step="10" value="100">
 								<input class="catalog-range" type="range" name="filter-price-max" min="0" max="700" step="10" value="500">
 						</fieldset>
-						<fieldset class="catalog-field">
+						<fieldset class="catalog-field catalog-field-fat">
 							<legend class="catalog-legend">Жирность</legend>
 								<label class="catalog-label"><input class="catalog-radio" type="radio" name="filter-fat-radio" value="0%">0%</label>
 								<label class="catalog-label"><input class="catalog-radio" type="radio" name="filter-fat-radio" value="0-10%" checked>до 10%</label>
 								<label class="catalog-label"><input class="catalog-radio" class="catalog-radio" type="radio" name="filter-fat-radio" value="10%-30%">до 30%</label>
 								<label class="catalog-label"><input class="catalog-radio" type="radio" name="filter-fat-radio" value="30%+">выше 30%</label>
 						</fieldset>
-						<fieldset class="catalog-field filter-taste">
+						<fieldset class="catalog-field catalog-field-taste">
 							<legend class="catalog-legend">Наполнители</legend>
 								<label class="catalog-label"><input class="catalog-checkbox" type="checkbox" name="filter-taste-check" value="chocolate">шоколадные</label>
 								<label class="catalog-label"><input class="catalog-checkbox" type="checkbox" name="filter-taste-check" value="sugar" checked>сахарные присыпки</label>
@@ -219,17 +222,19 @@
 			</div>
 			<div class="container">
 				<ul class="pagination">
+				<li class="pagination-item pagination-prev"><a class="pagination-link" href="#"><span class="visually-hidden">Предыдущая страница</span></a></li>
 					<li class="pagination-item"><a class="pagination-active pagination-link" href="#">1</a></li>
 					<li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
 					<li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
 					<li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
 					<li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
+					<li class="pagination-item pagination-next"><a class="pagination-link" href="#"><span class="visually-hidden">Следующая страница</span></a></li>
 				</ul>
 			</div>
 		</section>
 	</main>
 
-	<footer class="page-footer">
+<footer class="page-footer">
 		<div class="container">
 			<div class="social-block">
 				<ul class="social-links">
@@ -240,16 +245,20 @@
 				</ul>
 			</div>
 			<div class="footer-info">
-				<ul class="footer-info-list ">
-					<li class="footer-info-item footer-info-heart"><a class="link" href="#">Для поставщиков</a></li>
-					<li class="footer-info-item"><a class="link" href="#">О производстве</a></li>
-					<li class="footer-info-item"><a class="link" href="#">Наши документы</a></li>
-					<li class="footer-info-item"><a class="link" href="#">Экологические стандарты</a></li>
+				<ul class="footer-info-list">
+					<div class="footer-column">
+						<li class="footer-info-item footer-info-heart"><a class="link" href="#">Для поставщиков</a></li>
+						<li class="footer-info-item"><a class="link" href="#">О производстве</a></li>
+					</div>
+					<div class="footer-column">
+						<li class="footer-info-item"><a class="link" href="#">Наши документы</a></li>
+						<li class="footer-info-item"><a class="link" href="#">Экологические стандарты</a></li>
+					</div>
 				</ul>
 			</div>
 			<div class="copyright">
 				<img src="img/logo-htmlacademy.svg" alt="HTML Академия" width="108" height="39">
-				<p class="copyright-caption">Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>&copy; 2017</p>
+				<p class="copyright-caption">Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> &copy; 2017</p>
 			</div>
 		</div>
 	</footer>

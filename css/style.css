@@ -953,12 +953,34 @@ a{
 
 /* Фильтр товаров */
 
+.filter-form{
+	display: flex;
+	max-width: 860px;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+
 .catalog-field{
-	display: inline-block;
-	margin-right: 15px;
-	
-	border:none;
-	
+	border:none;	
+}
+
+.catalog-field-sort{
+	flex-basis: 193px;
+}
+
+.catalog-field-price{
+	flex-basis: 220px;
+}
+
+.catalog-field-fat{
+	flex-basis: 415px;
+}
+
+.catalog-field-taste{
+	flex-basis: 700px;
 }
 
 .catalog-legend{
@@ -969,7 +991,7 @@ a{
 }
 
 .catalog-select{
-	padding: 8px 15px;
+	padding: 8px 0;
 	
 	font-size: 16px;
 	line-height: 18px;
@@ -1025,17 +1047,41 @@ a{
 /* пагинация*/
 
 .pagination{
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: flex-end;
 	margin-left: 40px;
 	list-style: none;
 }
+
+
 
 .pagination-item{
 	display: inline-block;
 	margin-right: 5px;
 }
 
+.pagination-item:first-child,
+.pagination-item:last-child{
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	padding: 0;
+	transform: rotate(45deg);
+}
+
 .pagination-item:first-child{
-	
+	border-color: rgba(255, 255, 255, 0.2);
+	border-top-color: transparent;
+	border-right-color: transparent;
+}
+
+.pagination-item:first-child .pagination-link,
+.pagination-item:last-child .pagination-link{
+	display: block;
+	padding: 0;
+	width: 5px;
+	height: 5px;
 }
 
 .pagination-link{
