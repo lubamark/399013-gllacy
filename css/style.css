@@ -371,6 +371,7 @@ a{
 .bonus-stuff .container{
 	display: flex;
 	justify-content: space-between;
+	
 }
 
 .bonus-item{
@@ -379,10 +380,14 @@ a{
 	min-width: 420px;
 	max-width: 560px;
 	min-height: 230px;
+	
 	padding: 25px 20px;
+	margin-bottom: 35px;
+	
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	border-radius: 15px;
+	
 }
 
 .bonus-item-title{
@@ -397,7 +402,7 @@ a{
 }
 
 .bonus-1{
-	margin-right: 2.25%;
+	margin-right: 20px;
 	background-color: #761326;
 	background-image: url("../img/raspberries.jpg");
 }
@@ -415,11 +420,11 @@ a{
 	border-radius: 25px;
 }
 
-/*Карточки товаров
+/*Карточки товаров*/
 
-Почему не влазят карточки в каталоге? (внутри)
-
-*/
+.catalog-container{
+	padding: 0 10px;
+}
 
 .catalog-list{
 	display: flex;
@@ -434,17 +439,17 @@ a{
 	max-width: 293px;
 	min-width: 220px;
 	padding: 5px 13px 20px 13px;
+	
+	text-align: center;
 	border-radius: 5px;
 }
 
-.catalog-photo{
-	min-width: 200px;
-	min-height: 200px;
-	max-width: 267px;
-	max-height: 267px;
-}
+
 
 .catalog-link{
+	display: inline-block;
+	min-width: 200px;
+	max-width: 267px;
 	border-bottom: none;
 }
 
