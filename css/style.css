@@ -1,6 +1,4 @@
 *, *::before, ::after{
-	margin: 0; 
-	padding: 0; 
 	box-sizing: inherit;
 }
 
@@ -21,12 +19,14 @@ a{
 	text-decoration: none;
 }
 
-.menu ul,
 .menu-list,
 .header-buttons-list,
 .catalog-list,
+.gllacy-info-list,
 .social-links,
 .footer-info-list{
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -59,12 +59,11 @@ a{
 	margin: 0 auto;
 }
 
-
-
 .menu{
 	display: flex;
 	min-height: 70px;
 	align-items: center;
+
 }
 
 .logo{
@@ -74,10 +73,10 @@ a{
 /*меню переделаю на флексе тоже, когда вернусь к нему, как поняла, надо крупные блоки раскидать*/
 
 .menu-list {
-	width: 380px;
+	max-width: 600px;
+	margin-right: auto;
 	display: flex;
 	justify-content: space-between;
-
 }
 
 .menu-link{
@@ -318,6 +317,8 @@ a{
 }
 
 .header-schedule{
+	margin: 0;
+	padding: 0;
 	font-size: 14px;
 	font-weight: 700;
 	margin-bottom: 5px;
@@ -334,13 +335,10 @@ a{
 /* Слайды, пока не буду дооформлять, в целом поняла что делать, курсы посмотрю еще по этим штучкам, вернусь к ним. Закоментила, чтобы не листать простыню*/
 
 .slide{
-	position: relative;
-	
-	height: 880px;
+
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 }
-
 
 .slide-1{
 	background-image: url("../img/slide-1.png");
@@ -352,7 +350,6 @@ a{
 
 .slide-3{
 	background-image: url("../img/slide-3.png");
-	background-repeat: no-repeat;
 }
 
 .slider-title{
@@ -373,14 +370,12 @@ a{
 .bonus-stuff .container{
 	display: flex;
 	justify-content: space-between;
-	
 }
 
 .bonus-item{
 	display: flex;
 	flex-direction: column;
-	min-width: 420px;
-	max-width: 560px;
+	flex-basis: 49%;
 	min-height: 230px;
 	
 	padding: 25px 20px;
@@ -389,22 +384,24 @@ a{
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	border-radius: 15px;
-	
+	background-size: cover;
 }
 
 .bonus-item-title{
+	margin: 0;
+	padding: 0;
 	font-size: 35px;
-	font-weight: 700px;
+	font-weight: 700;
 	margin-bottom: 20px;
 }
 
 .bonus-item-description{
 	font-size: 18px;
-	font-weight: 700px;
+	font-weight: 700;
 }
 
 .bonus-1{
-	margin-right: 20px;
+	margin-right: 2%;
 	background-color: #761326;
 	background-image: url("../img/raspberries.jpg");
 }
@@ -433,25 +430,18 @@ a{
 	flex-wrap: wrap;
 }
 
-.catalog-hit-list{
-	flex-wrap: nowrap;
-}
-
 .catalog-item{
-	max-width: 293px;
-	min-width: 220px;
-	padding: 5px 13px 20px 13px;
+	flex-basis: 25%;
+	min-width: 200px;
+	padding: 5px 13px;
 	
 	text-align: center;
 	border-radius: 5px;
 }
 
-
-
 .catalog-link{
+	position: relative;
 	display: inline-block;
-	min-width: 200px;
-	max-width: 267px;
 	border-bottom: none;
 }
 
@@ -485,8 +475,18 @@ a{
 	background-size: cover;
 }
 
+.catalog-price{
+	margin: 0;
+	padding: 0;
+	
+	position: absolute;
+	bottom: 25px;
+}
+
 .catalog-price,
 .catalog-price:hover{
+	margin: 0;
+	padding: 0;
 	color: #ffffff;
 	font-size: 45px;
 	font-weight: 700;
@@ -500,13 +500,11 @@ a{
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 2px 12px;
-	
 }
 
 .weight{
 	font-size: 30px;
 }
-
 
 .catalog-title{
 	display: inline;
@@ -536,8 +534,8 @@ a{
 	color: #323232;
 
 	border-radius: 15px;
-	background-color: #eee1c5;
-	background: url("../img/wafer.jpg") repeat 0 0;
+	background: #eee1c5 url("../img/wafer.jpg") repeat 0 0;
+	background-size: cover;
 }
 
 .gllacy-info-title{
@@ -549,7 +547,7 @@ a{
 
 .gllacy-info-list{
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	font-size: 16px;
 	line-height: 22px;
@@ -560,15 +558,13 @@ a{
 .info-list-item{
 	position: relative;
 	padding-left: 60px;
-	max-width: 540px;
-	min-width: 400px;
+	flex-basis: 49%;
 	margin-bottom: 30px;
 }
 
 .info-list-item:nth-child(2n+1){
-	margin-right: 20px;
+	margin-right: 2%;
 }
-
 
 .info-list-item::before{
 	content: "";
@@ -606,9 +602,9 @@ a{
 /* Новое в блоге */
 
 .blog-news{
-	flex-basis: 50%;
+	flex-basis: 49%;
 
-	margin-right: 20px;
+	margin-right: 2%;
 	padding: 25px 20px;
 	
 	color: #323232;
@@ -618,6 +614,8 @@ a{
 }
 
 .blog-news-caption{
+	margin:0;
+	padding: 0;
 	margin-bottom: 10px;
 	
 	color: #323232;
@@ -627,6 +625,9 @@ a{
 }
 
 .blog-news-link{
+	margin: 0;
+	padding: 0;
+	
 	color: #323232;
 	font-size: 24px;
 	line-height: 30px;
@@ -638,7 +639,7 @@ a{
 /* Подписка */
 
 .subscribe{
-	flex-basis: 50%;
+	flex-basis: 49%;
 	padding: 5px;
 	color: #5a5a5a;
 	background-image: repeating-linear-gradient(135deg, #ffffff 0px, #ffffff 5px, #92cdff 5px, #92cdff 10px, #ffffff 10px, #ffffff 15px, #fe9e90 15px, #fe9e90 20px);
@@ -646,25 +647,30 @@ a{
 }
 
 .subscribe-form{
-	padding: 30px 25px;
+	padding: 25px;
 	background-color: #ffffff;
 	border-radius: 15px;
 }
 
 .subscribe-field{
 	position: relative;
+	display: flex;
+	justify-content: flex-start;
 }
 
 .subscribe-description{
-	margin-bottom: 40px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 35px;
 	
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
 }
 
-.subscribe-input-class{
+.subscribe-input-field{
 	padding: 10px 15px;
+	flex-grow: 1;
 
 	border-radius: 5px;
 	font-size: 16px;
@@ -721,9 +727,7 @@ a{
 }
 
 .contacts-block{
-	position: absolute;
-	right: 0;
-	
+	float: right;	
 	padding: 30px 20px;
 	margin: 60px 0;
 	
@@ -731,8 +735,6 @@ a{
 	color: #323232;
 	border-radius: 15px;
 }
-
-
 
 .contacts-caption-strong a,
 .contacts-caption-strong a:hover,
@@ -960,8 +962,6 @@ a{
 	align-items: center;
 	flex-wrap: wrap;
 }
-
-
 
 .catalog-field{
 	border:none;	
