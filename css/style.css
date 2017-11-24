@@ -25,7 +25,8 @@ a{
 .catalog-list,
 .gllacy-info-list,
 .social-links,
-.footer-info-list{
+.footer-info-list,
+.pagination{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -71,7 +72,7 @@ a{
 	margin-right: 10px;
 }
 
-/*меню переделаю на флексе тоже, когда вернусь к нему, как поняла, надо крупные блоки раскидать*/
+/* Меню */
 
 .menu-list {
 	max-width: 600px;
@@ -205,11 +206,11 @@ a{
 	display: inline-block;;
 }
 
-
 /* Кнопки */
 
 .button{
 	font-size: 18px;
+	line-height: 24px;
 	font-weight: 700;
 	color: #ffffff;
 	text-shadow: 2px 0 5px rgba(160, 32, 11, 0.75);
@@ -774,7 +775,7 @@ a{
 
 .page-footer .container{
 	display: flex;
-	margin-bottom: 20px;
+	margin: 20px 0;
 
 	align-items: center;
 	justify-content: space-between;
@@ -839,89 +840,22 @@ a{
 }
 
 .copyright-caption{
+	margin: 0;
+	padding: 0;
 	font-size: 13px;
 	line-height: 18px;
-}
-
-/* Модальные окна */
-
-.modal{
-	color: #323232;
-	background-color: #f8f7f4;
-}
-
-.modal-feedback{
-	padding: 20px 25px;
-	border-radius: 10px;
-}
-
-.modal-search{
-	padding: 20px 15px;
-	border-radius: 5px;
-}
-
-.modal-enter{
-	padding: 20px;
-	border-radius: 5px;
-}
-
-.modal-input{
-	padding: 10px 15px;
-	line-height: 22px;
-	font-weight: 400;
-	border: 1px solid rgba(178, 178, 178, 0.5);
-	border-radius: 5px;
-}
-
-.modal-input-header{
-	font-size: 14px;
-}
-
-.form-search,
-.form-enter{
-	font-size: 14px;
-}
-
-.button-login{
-	padding: 10px 25px;
-	
-	font-size: 18px;
-	line-height: 24px;
-	border-radius: 22px;
-}
-
-.enter-help{
-	list-style: none;
-}
-
-.enter-link{
-	font-size: 13px;
-	font-weight: 400;
-	line-height: 24px;
-	color: #323232;
-	border-bottom-color: (0, 0, 0, 0.3);
-}
-
-
-.button-feedback-form{
-	padding: 10px 20px;
-	
-	font-size: 18px;
-	line-height: 24px;
-	border-radius: 22px;
-}
-
-.close-modal{
-	padding: 10px;
-	background: #f8f7f4 url("../img/close-icon.svg") no-repeat 0 0;
-	
-	border: none;
 }
 
 /* логотип на внутренней странице*/
 
 .logo-link{
 	border-bottom: none;
+}
+
+/* Рамка после main на внутренних страницах*/
+
+.inner-page{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Хлебные крошки*/
@@ -1048,52 +982,27 @@ a{
 	border: none;
 }
 
-
 /* пагинация*/
 
 .pagination{
+	margin-bottom: 30px;
+	
 	display: flex;
 	align-items: center;
 	position: relative;
 	justify-content: flex-end;
-	margin-left: 40px;
 	list-style: none;
 }
-
-
 
 .pagination-item{
 	display: inline-block;
 	margin-right: 5px;
 }
 
-.pagination-item:first-child,
-.pagination-item:last-child{
-	background-color: transparent;
-	border: 2px solid #ffffff;
-	padding: 0;
-	transform: rotate(45deg);
-}
-
-.pagination-item:first-child{
-	border-color: rgba(255, 255, 255, 0.2);
-	border-top-color: transparent;
-	border-right-color: transparent;
-}
-
-.pagination-item:first-child .pagination-link,
-.pagination-item:last-child .pagination-link{
-	display: block;
-	padding: 0;
-	width: 5px;
-	height: 5px;
-}
-
 .pagination-link{
 	display: inline-block;
-	width: 28px;
-	padding: 5px;
-	
+	min-width: 28px;
+	padding: 5px 0;
 	
 	text-align: center;
 	font-size: 16px;
@@ -1113,4 +1022,151 @@ a{
 .pagination-active{
 	color: #323232;
 	background-color: #ffffff;
+}
+
+.pagination-prev-link,
+.pagination-next-link{
+	position: relative;
+	display: inline-block;
+	width: 14px;
+	height: 23px;
+	
+	background: transparent;
+}
+
+.pagination-prev-link::before,
+.pagination-next-link::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10px;
+	
+	width: 7px;
+	height: 7px;
+	transform: rotate(45deg);
+	
+	border: 1px solid #ffffff;
+}
+
+.pagination-prev-link::before{
+	left: 0;
+	border-top-color: transparent;
+	border-right-color: transparent;
+}
+
+.pagination-next-link::before{
+	right: 0;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+}
+
+
+.pagination-disabled-link::before{
+	opacity: 0.3;
+}
+
+
+
+/* Модальные окна */
+
+.modal{
+	color: #323232;
+	background-color: #f8f7f4;
+}
+
+.modal-feedback{
+	padding: 20px 25px;
+	border-radius: 10px;
+}
+
+.modal-search{
+	padding: 20px 15px;
+	border-radius: 5px;
+}
+
+.modal-enter{
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.modal-input{
+	padding: 10px 15px;
+	line-height: 22px;
+	font-weight: 400;
+	border: 1px solid rgba(178, 178, 178, 0.5);
+	border-radius: 5px;
+}
+
+.modal-input-header{
+	font-size: 14px;
+}
+
+.form-search,
+.form-enter{
+	font-size: 14px;
+}
+
+.button-login{
+	padding: 10px 25px;
+	
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 22px;
+}
+
+.enter-help{
+	list-style: none;
+}
+
+.enter-link{
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #323232;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+.button-feedback-form{
+	padding: 10px 20px;
+	
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 22px;
+}
+
+.close-modal{
+	padding: 10px;
+	background: #f8f7f4 url("../img/close-icon.svg") no-repeat 0 0;
+	
+	border: none;
+}
+	
+	
+	
+/*Корзина*/
+
+.cart-box{
+	padding: 20px 15px;
+	
+	font-size: 13px;
+	line-height: 16px;
+	
+	border-radius: 5px;
+}
+
+.cart-delete-button{
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 5px;
+	background: #f8f7f4 url("../img/close-icon.svg") no-repeat 0 0;
+	background-size: cover;
+	
+	border: none;
+}
+
+.button-inner-cart{
+	padding: 10px 15px;
+	border-radius: 22px;
+}
 }

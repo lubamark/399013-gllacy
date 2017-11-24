@@ -46,7 +46,7 @@
 		</div>
 	</header>
 	
-	<main>
+	<main class="inner-page">
 		<div class="container">
 			<ul class="breadcrumbs-list">
 				<li class="breadcrumbs-item"><a class="link" href="index.html">Главная</a></li>
@@ -222,19 +222,19 @@
 			</div>
 			<div class="container">
 				<ul class="pagination">
-				<li class="pagination-item pagination-prev"><a class="pagination-link" href="#"><span class="visually-hidden">Предыдущая страница</span></a></li>
+				<li class="pagination-item pagination-prev"><a class="pagination-prev-link pagination-disabled-link" href="#"><span class="visually-hidden">Предыдущая страница</span></a></li>
 					<li class="pagination-item"><a class="pagination-active pagination-link" href="#">1</a></li>
 					<li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
 					<li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
 					<li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
 					<li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
-					<li class="pagination-item pagination-next"><a class="pagination-link" href="#"><span class="visually-hidden">Следующая страница</span></a></li>
+					<li class="pagination-item pagination-next"><a class="pagination-next-link" href="#"><span class="visually-hidden">Следующая страница</span></a></li>
 				</ul>
 			</div>
 		</section>
 	</main>
 
-<footer class="page-footer">
+	<footer class="page-footer">
 		<div class="container">
 			<div class="social-block">
 				<ul class="social-links">
@@ -267,11 +267,15 @@
 		<table class="cart-inner">
 			<tbody>
 				<tr>
+					<td><button type="button" class="cart-delete-button"><span class="visually-hidden">Удалить из корзины</span></button></td>
+					<td  class="cart-inner-photo"><img src="img/cream-orange-small.jpg" alt="Пломбир с апельсиновым джемом"></td>
 					<td>Пломбир с апельсиновым джемом</td>
 					<td>1,5 кг х <span class="cart-inner-price">200 руб.</span></td>
 					<td>300 руб.</td>
 				</tr>
 				<tr>
+					<td><button type="button" class="cart-delete-button"><span class="visually-hidden">Удалить из корзины</span></button></td>
+					<td  class="cart-inner-photo"><img src="img/cream-srawberry-small.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
 					<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 					<td>1,5 кг х <span class="cart-inner-price">300 руб.</span></td>
 					<td>450 руб.</td>
@@ -281,7 +285,7 @@
 				</tr>
 			</tbody>
 		</table>
-		<button type="button" class="button">Оформить заказ</button>
+		<button type="button" class="button button-inner-cart">Оформить заказ</button>
 	</div>
 	
   </body>
