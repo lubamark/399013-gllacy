@@ -1155,6 +1155,10 @@ a{
 	border-radius: 5px;
 }
 
+.cart-inner tr{
+	min-height: 50px;
+}
+
 .cart-delete-button{
 	display: inline-block;
 	margin-bottom: 5px;
