@@ -21,6 +21,8 @@ a{
 
 .menu-list,
 .submenu-list,
+.slider-controls,
+.slider-list,
 .header-buttons-list,
 .catalog-list,
 .gllacy-info-list,
@@ -213,7 +215,6 @@ a{
 	line-height: 24px;
 	font-weight: 700;
 	color: #ffffff;
-	text-shadow: 2px 0 5px rgba(160, 32, 11, 0.75);
 	background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.65);
 	border: none;
@@ -338,44 +339,107 @@ a{
 	background-position: 50% 0;
 }
 
-/* Слайды, пока не буду дооформлять, в целом поняла что делать, курсы посмотрю еще по этим штучкам, вернусь к ним. Закоментила, чтобы не листать простыню*/
+/* Слайды */
 
-.slide{
-
+.slide-wrapper{
+	background-color: #849d8f;
+	background-image: url("../img/slide-1.png");
 	background-repeat: no-repeat;
-	background-position: 50% 0;
+	background-position: top center;
+	
+	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-.slide-1{
+
+.slider{
+	position: relative;
+	padding-top: 320px;
+	margin-bottom: 40px;
+	
+	text-align: center;
+	color: #ffffff;
+}
+
+.slide{
+	display: none;
+}
+
+#btn-1:checked ~ .slide-wrapper .slide-1,
+#btn-2:checked ~ .slide-wrapper .slide-2,
+#btn-3:checked ~ .slide-wrapper .slide-3{
+	display: block;
+}
+
+#btn-1:checked ~ .slide-wrapper label[for="btn-1"],
+#btn-2:checked ~ .slide-wrapper label[for="btn-2"],
+#btn-3:checked ~ .slide-wrapper label[for="btn-3"]{
+	background-color: #ffffff;
+}
+
+#btn-1:checked ~ .slide-wrapper{
+	background-color: #849d8f;
 	background-image: url("../img/slide-1.png");
 }
 
-.slide-2{
+#btn-2:checked ~ .slide-wrapper{
+	background-color: #8996a6;
 	background-image: url("../img/slide-2.png");
 }
 
-.slide-3{
+#btn-3:checked ~ .slide-wrapper{
+	background-color: #9d8b84;
 	background-image: url("../img/slide-3.png");
 }
 
+
 .slider-title{
+	width: 700px;
+	margin: 0 auto 20px auto;;
 	font-size: 60px;
-	line-height: 64px;
+	line-height: 60px;
 	font-weight: 700;
 	text-align: center;
 }
 
 .button-slider{
-	padding: 15px 35px;
+	padding: 10px 35px;
 	font-size: 32px;
+	line-height: 44px;
+	text-shadow: 2px 0 5px rgba(160, 32, 11, 0.75);
 	border-radius: 32px;
+}
+
+.slider-controls{
+	position: absolute;
+	bottom: 65px;
+	left: 0;
+	z-index: 20;
+	
+	font-size: 0;
+}
+.slider-controls li{
+	display: inline-block;
+}
+
+.slider-controls label{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 8px;
+
+	vertical-align: top;
+
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
 }
 
 /* Бонусы */
 
 .bonus-stuff .container{
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .bonus-item{
@@ -505,7 +569,7 @@ a{
 	background-image: url("../img/ruble-icon.png");
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: 2px 12px;
+	background-position: 2px 17px;
 }
 
 .weight{
@@ -750,6 +814,8 @@ a{
 }
 
 .contacts-caption{
+	margin: 0;
+	padding: 0;
 	margin-bottom: 25px;
 	max-width: 240px;
 	font-size: 16px;
@@ -1141,13 +1207,15 @@ a{
 	
 	border: none;
 }
-	
-	
-	
-/*Корзина*/
+
+/*Корзина c товарами*/
 
 .cart-box{
 	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	width: 540px;
+	align-items: flex-end;
 	
 	font-size: 13px;
 	line-height: 16px;
@@ -1155,13 +1223,24 @@ a{
 	border-radius: 5px;
 }
 
-.cart-inner tr{
-	min-height: 50px;
+.cart-inner{
+	border-collapse: collapse;
+}
+
+.cart-inner td{
+	vertical-align: top;
+	height: 50px;
+}
+
+
+.cart-inner-delete{
+	padding:5px 0;
+	width: 20px;
+	
 }
 
 .cart-delete-button{
 	display: inline-block;
-	margin-bottom: 5px;
 	padding: 5px;
 	background: #f8f7f4 url("../img/close-icon.svg") no-repeat 0 0;
 	background-size: cover;
@@ -1169,8 +1248,36 @@ a{
 	border: none;
 }
 
+.cart-inner-photo{
+	padding: 0;
+}
+
+.cart-inner td:nth-child(3){
+	max-width: 250px;
+	padding: 10px 15px;
+}
+
+.cart-inner td:nth-child(4),
+.cart-inner td:nth-child(5){
+	padding: 10px 15px;
+}
+
+.cart-inner-price{
+	color: #999999;
+}
+
+.cart-inner-count td{
+	padding: 15px 0;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: right;
+	
+	color: #323232;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .button-inner-cart{
 	padding: 10px 15px;
 	border-radius: 22px;
-}
 }
