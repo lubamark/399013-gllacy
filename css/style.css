@@ -963,7 +963,7 @@ a{
 .filter-form{
 	display: flex;
 	max-width: 860px;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -981,7 +981,7 @@ a{
 }
 
 .catalog-field-fat{
-	flex-basis: 415px;
+	flex-basis: 400px;
 }
 
 .catalog-field-taste{
@@ -995,24 +995,34 @@ a{
 	font-weight: 500;
 }
 
+.style-select{
+	width: 195px;
+	overflow: hidden;
+	border-radius: 18px;
+}
+
 .catalog-select{
-	padding: 8px 0;
-	
+	width: 215px;
+	padding: 8px 15px;
+
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
 	color: #ffffff;
-	background-color: rgba(255, 255, 255, 0.2);
+
+	background: rgba(255, 255, 255, 0.2) url("../img/icon-down-white.svg") no-repeat 167px 13px;
 	border:none;
-	border-radius: 18px;
 }
 
 .catalog-select:hover{
 	color: #323232;
+	background: rgba(255, 255, 255, 0.2) url("../img/icon-down-black.svg") no-repeat 167px 13px;
 }
 
+.catalog-select:active,
 .catalog-select:focus{
-	background-color: #ffffff;
+	color: #323232;
+	background: #ffffff url("../img/icon-down-black.svg") no-repeat 167px 13px;
 }
 
 .catalog-select option{
