@@ -37,7 +37,7 @@
 					<ul class="header-buttons-list">
 						<li><button type="button" class="button-search header-buttons"><span class="visually-hidden">Поиск</span></button></li>
 						<li><button type="button" class="button-enter header-buttons">Вход</button></li>
-						<li><button type="button" class="button-cart header-buttons"><span class="cart-content">Пусто</button></li>
+						<li><button type="button" class="button-cart header-buttons"><span class="cart-content">Пусто</span></button></li>
 					</ul>
 				</nav>
 				<section class="header-contacts">
@@ -102,7 +102,7 @@
 						<li class="hit catalog-item">
 							<a class="catalog-link" href="#">
 								<div class="catalog-photo">
-									<img src="img/cream-orange.jpg" alt="хит-1" width="100%" height="100%">
+									<img src="img/cream-orange.jpg" alt="Хит-1">
 									<p class="catalog-price">310<span class="ruble-icon"></span><span class="visually-hidden">рублей</span><span class="weight">/кг</span></p>
 								</div>
 								<h3 class="catalog-title title link">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
@@ -112,7 +112,7 @@
 						<li class="hit catalog-item">
 							<a class="catalog-link" href="#">
 								<div class="catalog-photo">
-									<img src="img/cream-coffe.jpg" alt="Хит-2" width="100%" height="100%">
+									<img src="img/cream-coffe.jpg" alt="Хит-2">
 									<p class="catalog-price">380<span class="ruble-icon"></span><span class="visually-hidden">рублей</span><span class="weight">/кг</span></p>
 								</div>
 								<h3 class="catalog-title title link">Сливочно-кофейное с кусочками шоколада</h3>
@@ -122,7 +122,7 @@
 						<li class="hit catalog-item">
 							<a class="catalog-link" href="#">
 								<div class="catalog-photo">	
-									<img src="img/cream-srawberry.jpg" alt="хит-3" width="100%" height="100%">
+									<img src="img/cream-srawberry.jpg" alt="Хит-3">
 									<p class="catalog-price">355<span class="ruble-icon"></span><span class="visually-hidden">рублей</span><span class="weight">/кг</span></p>
 								</div>
 								<h3 class="catalog-title title link">Сливочно-клубничное с присыпкой из белого шоколада</h3>
@@ -132,7 +132,7 @@
 						<li class="hit catalog-item">
 							<a class="catalog-link" href="#">
 								<div class="catalog-photo">	
-									<img src="img/cream-caramel.jpg" alt="хит-4" width="100%" height="100%">
+									<img src="img/cream-caramel.jpg" alt="Хит-4">
 									<p class="catalog-price">415<span class="ruble-icon"></span><span class="visually-hidden">рублей</span><span class="weight">/кг</span></p>
 								</div>
 								<h3 class="catalog-title title link">Сливочное крем-брюле с карамельной подливкой</h3>
@@ -155,7 +155,7 @@
 				</article>
 			</div>
 <!--Блог + подписка-->
-			<section class="blog-and-subscribe">
+			<div class="blog-and-subscribe">
 				<div class="container">
 					<article class="blog-news">
 						<p class="blog-news-caption">Новое в нашем блоге</p>
@@ -172,11 +172,12 @@
 						</form>
 					</div>
 				</div>
-			</section>
+			</div>
 <!-- Контакты и карта -->
 			<section class="contacts">
+				<h3 class="visually-hidden">Контакты и карта</h3>
 				<div class="contacts-map" id="yandexMap">
-					<img src="img/map.png" height="100%" alt="Мы находимся по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+					<img src="img/map.png" alt="Мы находимся по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 				</div>
 				<div class="container">
 					<div class="contacts-block">
@@ -205,15 +206,13 @@
 					</ul>
 				</div>
 				<div class="footer-info">
-					<ul class="footer-info-list">
-						<div class="footer-column">
+					<ul class="footer-info-list footer-column">
 							<li class="footer-info-item footer-info-heart"><a class="link" href="#">Для поставщиков</a></li>
 							<li class="footer-info-item"><a class="link" href="#">О производстве</a></li>
-						</div>
-						<div class="footer-column">
-							<li class="footer-info-item"><a class="link" href="#">Наши документы</a></li>
-							<li class="footer-info-item"><a class="link" href="#">Экологические стандарты</a></li>
-						</div>
+					</ul>
+					<ul class="footer-info-list footer-column">
+						<li class="footer-info-item"><a class="link" href="#">Наши документы</a></li>
+						<li class="footer-info-item"><a class="link" href="#">Экологические стандарты</a></li>
 					</ul>
 				</div>
 				<div class="copyright">
@@ -232,7 +231,7 @@
 			</p>
 		</form>
 	</div>
-<!--Окно входа---->
+<!--Окно входа -->
 	<div class="modal modal-enter">
 		<form class="form-enter" action="https://echo.htmlacademy.ru/" method="post">
 			<p class="form-wrapper">
