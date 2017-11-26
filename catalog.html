@@ -92,11 +92,22 @@
 						</fieldset>
 						<fieldset class="catalog-field catalog-field-taste">
 							<legend class="catalog-legend">Наполнители</legend>
-								<label class="catalog-label"><input class="catalog-checkbox" type="checkbox" name="filter-taste-check" value="chocolate">шоколадные</label>
-								<label class="catalog-label"><input class="catalog-checkbox" type="checkbox" name="filter-taste-check" value="sugar" checked>сахарные присыпки</label>
-								<label class="catalog-label"><input class="catalog-checkbox" type="checkbox" name="filter-taste-check" value="fruits">фрукты</label>
-								<label class="catalog-label"><input class="catalog-checkbox" type="checkbox" name="filter-taste-check" value="syrup">сиропы</label>
-								<label class="catalog-label"><input class="catalog-checkbox" type="checkbox" name="filter-taste-check" value="jam">джемы</label>
+								<div class="field-taste-wrapper">
+									<input class="visually-hidden checkbox-input" id="chocolate" type="checkbox" name="filter-taste-check" value="chocolate" checked disabled>
+									<label for="chocolate" class="checkbox-label" tabindex="0">шоколадные</label>
+									
+									<input class="visually-hidden" id="sugar" type="checkbox" name="filter-taste-check" value="sugar" checked>
+									<label for="sugar" class="checkbox-label" tabindex="0">сахарные присыпки</label>
+									
+									<input class="visually-hidden" id="fruits" type="checkbox" name="filter-taste-check" value="fruits">
+									<label for="fruits" class="checkbox-label" tabindex="0">фрукты</label>
+									
+									<input class="visually-hidden" id="syrup" type="checkbox" name="filter-taste-check" value="syrup">
+									<label for="syrup" class="checkbox-label" tabindex="0">сиропы</label>
+									
+									<input class="visually-hidden" id="jam" type="checkbox" name="filter-taste-check" value="jam">
+									<label for="jam" class="checkbox-label" tabindex="0">джемы</label>
+								</div>
 						</fieldset>
 						<button type="submit" class="button-filter">Применить</button>
 					</form>

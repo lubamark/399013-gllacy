@@ -973,12 +973,13 @@ a{
 	display: flex;
 	max-width: 860px;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-end;
 	flex-wrap: wrap;
 }
 
 .catalog-field{
 	padding: 0;
+	margin-bottom: 20px;
 	border:none;	
 }
 
@@ -998,10 +999,12 @@ a{
 
 .catalog-field-taste{
 	flex-basis: 700px;
+	margin-right: 10px;
 }
 
 .catalog-legend{
 	padding-left: 15px;
+	padding-bottom: 10px;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
@@ -1044,7 +1047,8 @@ a{
 	font-weight: 400;
 }
 
-.field-fat-wrapper{
+.field-fat-wrapper,
+.field-taste-wrapper{
 	padding: 7px 15px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 18px;
@@ -1069,7 +1073,7 @@ a{
 	width: 22px;
 	height: 22px;
 	border-radius: 50%;
-	border: 2px solid rgba(255, 255, 255, 0.8);
+	border: 3px solid rgba(255, 255, 255, 0.8);
 	
 }
 
@@ -1078,16 +1082,6 @@ a{
 	border-color: #ffffff;
 }
 
-#filter-fat-0:checked ~ .radio-label[for="filter-fat-0"]:hover::before,
-#filter-fat-0:checked:focus ~ .radio-label[for="filter-fat-0"]::before,
-#filter-fat-10:checked ~ .radio-label[for="filter-fat-10"]:hover::before,
-#filter-fat-10:checked ~ .radio-label[for="filter-fat-10"]::before,
-#filter-fat-30:checked ~ .radio-label[for="filter-fat-30"]:hover::before,
-#filter-fat-30:checked:focus ~ .radio-label[for="filter-fat-30"]:focus::before,
-#filter-fat-over-30:checked ~ .radio-label[for="filter-fat-over-30"]:hover::before,
-#filter-fat-over-30:checked:focus ~ .radio-label[for="filter-fat-over-30"]::before{
-	border-color: #ffffff;
-}
 
 #filter-fat-0:checked ~ .radio-label[for="filter-fat-0"]::after,
 #filter-fat-10:checked ~ .radio-label[for="filter-fat-10"]::after,
@@ -1104,14 +1098,14 @@ a{
 	border-radius: 50%;
 }
 
-#filter-fat-0:checked ~ .radio-label[for="filter-fat-0"]:hover::after,
-#filter-fat-0:checked:focus ~ .radio-label[for="filter-fat-0"]::after,
-#filter-fat-10:checked ~ .radio-label[for="filter-fat-10"]:hover::after,
-#filter-fat-10:checked ~ .radio-label[for="filter-fat-10"]::after,
-#filter-fat-30:checked ~ .radio-label[for="filter-fat-30"]:hover::after,
-#filter-fat-30:checked:focus ~ .radio-label[for="filter-fat-30"]:focus::after,
-#filter-fat-over-30:checked ~ .radio-label[for="filter-fat-over-30"]:hover::after,
-#filter-fat-over-30:checked:focus ~ .radio-label[for="filter-fat-over-30"]::after{
+#filter-fat-0 ~ .radio-label[for="filter-fat-0"]:hover::after,
+#filter-fat-0:focus ~ .radio-label[for="filter-fat-0"]::after,
+#filter-fat-10 ~ .radio-label[for="filter-fat-10"]:hover::after,
+#filter-fat-10:focus ~ .radio-label[for="filter-fat-10"]::after,
+#filter-fat-30 ~ .radio-label[for="filter-fat-30"]:hover::after,
+#filter-fat-30:focus ~ .radio-label[for="filter-fat-30"]:focus::after,
+#filter-fat-over-30 ~ .radio-label[for="filter-fat-over-30"]:hover::after,
+#filter-fat-over-30:focus ~ .radio-label[for="filter-fat-over-30"]::after{
 	background-color: #ffffff;
 }
 
@@ -1129,8 +1123,57 @@ a{
 	border-color: rgba(255, 255, 255, 0.4);
 }
 
+.checkbox-label{
+	position: relative;
+	padding-left: 30px;
+	margin-right: 20px;
+}
+
+.checkbox-label:last-child{
+	margin-right: 0;
+}
+
+.checkbox-label::after{
+	content: "";
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	opacity: 0.8;
+	width: 24px;
+	height: 23px;
+	background: url("../img/checkbox-off.svg") no-repeat 0 0;
+}
+
+#chocolate:checked ~.checkbox-label[for="chocolate"]::after,
+#sugar:checked ~.checkbox-label[for="sugar"]::after,
+#fruits:checked ~.checkbox-label[for="fruits"]::after,
+#syrup:checked ~.checkbox-label[for="syrup"]::after,
+#jam:checked ~.checkbox-label[for="jam"]::after{
+	content: "";
+	
+	width: 26px;
+	height: 23px;
+	
+	background: url("../img/checkbox-on.svg") no-repeat 0 0;
+}
+
+.checkbox-label:hover::after{
+	opacity: 1;
+}
+
+#chocolate:disabled ~.checkbox-label[for="chocolate"]::after,
+#sugar:disabled ~.checkbox-label[for="sugar"]::after,
+#fruits:disabled ~.checkbox-label[for="fruits"]::after,
+#syrup:disabled ~.checkbox-label[for="syrup"]::after,
+#jam:disabled ~.checkbox-label[for="jam"]::after{
+	opacity: 0.4;
+}
+
 .button-filter{
-	padding: 8px 30px;
+	padding: 7px 30px;
+	margin-bottom: 20px;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1148,7 +1191,7 @@ a{
 }
 
 .button-filter:active{
-	padding: 10px 32px;
+	padding: 9px 32px;
 	color: #323232;
 	background-color: #eaeaea;
 	box-shadow: inset 0 2px 1px #696969;
