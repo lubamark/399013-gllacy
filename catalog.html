@@ -73,9 +73,17 @@
 							</div>
 						</fieldset>
 						<fieldset class="catalog-field catalog-field-price">
-							<legend class="catalog-legend">Цена: 100 руб. - 500 руб</legend>
-								<input class="catalog-range" type="range" name="filter-price-min" min="0" max="500" step="10" value="100">
-								<input class="catalog-range" type="range" name="filter-price-max" min="0" max="700" step="10" value="500">
+							<legend class="catalog-legend">Цена: 100 руб. – 500 руб</legend>
+								<div class="field-price-wrapper">
+									<div class="scale">
+										<div class="bar" style="margin-left: 20%; width: 50%"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+									<!-- <input class="catalog-range" type="range" name="filter-price-min" min="0" max="500" step="10" value="100">
+									<input class="catalog-range" type="range" name="filter-price-max" min="0" max="700" step="10" value="500"> -->
+								
 						</fieldset>
 						<fieldset class="catalog-field catalog-field-fat">
 							<legend class="catalog-legend">Жирность</legend>
