@@ -793,6 +793,7 @@ a{
 
 .contacts{
 	position: relative;
+	overflow:hidden;
 	margin-bottom: 35px;
 	
 	min-height: 430px;
@@ -893,8 +894,13 @@ a{
 	filter: brightness(85%);
 }
 
+.footer-info{
+	display: flex;
+}
+
 .footer-info-list{
 	display: flex;
+	flex-direction: column;
 	max-width: 350px;
 	white-space: nowrap;
 	color: #ffffff;
