@@ -79,10 +79,16 @@
 						</fieldset>
 						<fieldset class="catalog-field catalog-field-fat">
 							<legend class="catalog-legend">Жирность</legend>
-								<label class="catalog-label"><input class="catalog-radio" type="radio" name="filter-fat-radio" value="0%">0%</label>
-								<label class="catalog-label"><input class="catalog-radio" type="radio" name="filter-fat-radio" value="0-10%" checked>до 10%</label>
-								<label class="catalog-label"><input class="catalog-radio" class="catalog-radio" type="radio" name="filter-fat-radio" value="10%-30%">до 30%</label>
-								<label class="catalog-label"><input class="catalog-radio" type="radio" name="filter-fat-radio" value="30%+">выше 30%</label>
+								<div class="field-fat-wrapper">
+									<input class="visually-hidden" type="radio" name="filter-fat-radio" id="filter-fat-0" value="0%" disabled>
+									<label for="filter-fat-0" class="radio-label" tabindex="0">0%</label>
+									<input class="visually-hidden" type="radio" name="filter-fat-radio" id="filter-fat-10" value="0-10%" checked>
+									<label for="filter-fat-10" class="radio-label" tabindex="0">до 10%</label>
+									<input class="visually-hidden" class="catalog-radio" type="radio" name="filter-fat-radio" id="filter-fat-30" value="10%-30%">
+									<label for="filter-fat-30" class="radio-label"  tabindex="0">до 30%</label>
+									<input class="visually-hidden" type="radio" name="filter-fat-radio" id="filter-fat-over-30" value="30%+">
+									<label for ="filter-fat-over-30" class="radio-label"  tabindex="0">выше 30%</label>
+								</div>
 						</fieldset>
 						<fieldset class="catalog-field catalog-field-taste">
 							<legend class="catalog-legend">Наполнители</legend>
