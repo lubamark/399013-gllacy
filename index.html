@@ -226,22 +226,22 @@
 <!--Окно поиска-->
 	<div class="modal modal-search">
 		<form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
-			<p>
+			<p class="form-wrapper">
 				<input class="modal-input modal-input-header" type="text" name="search" id="search" placeholder="Что ищем?">
-				<label class="modal-label" for="search">Что ищем?</label>
+				<label for="search" class="modal-label visually-hidden" >Что ищем?</label>
 			</p>
 		</form>
 	</div>
 <!--Окно входа---->
 	<div class="modal modal-enter">
 		<form class="form-enter" action="https://echo.htmlacademy.ru/" method="post">
-			<p>
-			<input class="modal-input modal-input-header" type="email" name="email" placeholder="Электронная почта" required>
-			<label class="modal-label">Электронная почта</label>
+			<p class="form-wrapper">
+				<input class="modal-input modal-input-enter" type="email" id="email" name="email" placeholder="Электронная почта" required>
+				<label for="email" class="visually-hidden modal-label">Электронная почта</label>
 			</p>
-			<p>
-				<input class="modal-input modal-input-header" type="password" name="password" placeholder="Пароль" required>
-				<label class="modal-label">Пароль</label>
+			<p class="form-wrapper">
+				<input class="modal-input modal-input-enter" type="password" name="password" placeholder="Пароль" required>
+				<label class="visually-hidden modal-label">Пароль</label>
 			</p>
 			<button type="submit" class="button button-login">Войти</button>
 			<ul class="enter-help">
@@ -254,9 +254,18 @@
 	<div class="modal modal-feedback">
 		<form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
 			<h2 class="feedback-caption">Мы обязательно вам ответим!</h2>
-			<p><label>Как вас зовут? <input class="modal-input" type="text" name="feedback-name" placeholder="Как вас зовут?"></label></p>
-			<p><label>Ваша почта для ответа?<input class="modal-input" type="email" name="feedback-email" placeholder="Ваша почта для ответа?" required></label></p>
-			<p><label>Напишите что-нибудь...<textarea class="modal-input" name="feedback-text" placeholder="Напишите что-нибудь..." rows="5"></textarea><label class="visually-hidden"></p>
+			<p class="form-wrapper">
+				<input class="modal-input input-part" id="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?">
+				<label for="feedback-name" class="visually-hidden">Как вас зовут? </label>
+			</p>
+			<p class="form-wrapper">
+				<input class="modal-input input-part" type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?" required>
+				<label for="feedback-email" class="visually-hidden">Ваша почта для ответа?</label>
+			</p>
+			<p class="form-wrapper">
+				<label for ="feedback-text" class="visually-hidden">Напишите что-нибудь...</label>
+				<textarea class="modal-input" id="feedback-text" name="feedback-text" placeholder="Напишите что-нибудь..." rows="6"></textarea>
+			</p>
 			<button type="submit" class="button button-feedback-form">Отправить</button>
 		</form>
 		<button type="button" class="close-modal"><span class="visually-hidden">Закрыть</span></button>
