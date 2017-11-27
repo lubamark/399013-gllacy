@@ -57,8 +57,9 @@ a{
 }
 
 .container{
-	max-width: 1146px;
-	min-width: 860px;
+	max-width:1200px;
+	min-width: 900px;
+	padding: 0 2%;
 	margin: 0 auto;
 }
 
@@ -307,7 +308,7 @@ a{
 
 .cart-content{
 	display: inline-block;
-	width: 55px;
+	width: 58px;
 }
 
 .button-cart:hover,
@@ -421,6 +422,7 @@ a{
 	padding: 10px 35px;
 	font-size: 32px;
 	line-height: 44px;
+	font-weight: 700;
 	text-shadow: 2px 0 5px rgba(160, 32, 11, 0.75);
 	border-radius: 32px;
 }
@@ -510,7 +512,10 @@ a{
 /*Карточки товаров*/
 
 .catalog-container{
-	max-width: 1166px;
+	max-width: 1200px;
+	min-width: 900px;
+	padding: 0 1%;
+	margin: 0 auto;
 }
 
 .catalog-list{
@@ -522,9 +527,9 @@ a{
 	flex-basis: 25%;
 	min-width: 200px;
 	max-width: 293px;
+	padding: 10px;
 	margin-bottom: -20px;
 	
-	overflow: visible;
 	text-align: center;
 	border-radius: 5px;
 }
@@ -549,10 +554,11 @@ a{
 .catalog-photo{
 	position: relative;
 	max-width: 267px;
-	margin: 5px auto;
+	min-width: 200px;
 }
 
 .catalog-photo img{
+	width: 100%;
 	border-radius: 50%;
 }
 
@@ -603,7 +609,6 @@ a{
 
 .catalog-title{
 	display: inline;
-	padding: 0 10px;
 
 	color: #ffffff;
 	font-size: 16px;
@@ -736,7 +741,6 @@ a{
 	line-height: 30px;
 	text-decoration: underline;
 	background-color: rgba(255, 255, 255, 0.8);
-	
 }
 
 /* Подписка */
