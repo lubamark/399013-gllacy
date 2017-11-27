@@ -57,9 +57,8 @@ a{
 }
 
 .container{
-	max-width: 1200px;
-	min-width: 900px;
-	padding: 0 25px;
+	max-width: 1146px;
+	min-width: 860px;
 	margin: 0 auto;
 }
 
@@ -76,7 +75,7 @@ a{
 }
 
 .logo{
-	margin-right: 10px;
+	margin-right: 9px;
 }
 
 /* Меню */
@@ -245,6 +244,7 @@ a{
 
 .header-buttons-list{
 	margin-left: auto;
+	margin-bottom: 10px;
 	min-width: 260px;
 	max-width: 265px;
 	display: flex;
@@ -283,7 +283,7 @@ a{
 
 .button-enter,
 .button-cart{
-	padding: 8px 16px 8px 47px;
+	padding: 8px 17px 8px 45px;
 	background-position: 16px 50%;
 }
 
@@ -307,7 +307,7 @@ a{
 
 .cart-content{
 	display: inline-block;
-	width: 58px;
+	width: 55px;
 }
 
 .button-cart:hover,
@@ -363,7 +363,7 @@ a{
 
 .slider{
 	position: relative;
-	padding-top: 270px;
+	padding-top: 265px;
 	margin-bottom: 40px;
 	
 	text-align: center;
@@ -410,7 +410,7 @@ a{
 
 .slider-title{
 	width: 700px;
-	margin: 0 auto 20px auto;
+	margin: 0 auto 30px auto;
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
@@ -427,7 +427,7 @@ a{
 
 .slider-controls{
 	position: absolute;
-	bottom: 15px;
+	bottom: 20px;
 	left: 0;
 	z-index: 20;
 	
@@ -441,7 +441,7 @@ a{
 	display: inline-block;
 	width: 20px;
 	height: 20px;
-	margin-right: 8px;
+	margin-right: 9px;
 
 	vertical-align: top;
 
@@ -478,10 +478,12 @@ a{
 	padding: 0;
 	font-size: 35px;
 	font-weight: 700;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 .bonus-item-description{
+	margin: 0;
+	padding: 0;
 	font-size: 18px;
 	font-weight: 700;
 }
@@ -501,14 +503,14 @@ a{
 .button-bonus{
 	margin-left: auto;
 	margin-top: auto;
-	padding: 13px 17px;
+	padding: 10px 20px;
 	border-radius: 25px;
 }
 
 /*Карточки товаров*/
 
 .catalog-container{
-	padding: 0 10px;
+	max-width: 1166px;
 }
 
 .catalog-list{
@@ -519,8 +521,10 @@ a{
 .catalog-item{
 	flex-basis: 25%;
 	min-width: 200px;
-	padding: 5px 13px;
+	max-width: 293px;
+	margin-bottom: -20px;
 	
+	overflow: visible;
 	text-align: center;
 	border-radius: 5px;
 }
@@ -544,6 +548,8 @@ a{
 
 .catalog-photo{
 	position: relative;
+	max-width: 267px;
+	margin: 5px auto;
 }
 
 .catalog-photo img{
@@ -566,7 +572,8 @@ a{
 	padding: 0;
 	
 	position: absolute;
-	bottom: 25px;
+	left: 0px;
+	bottom: 24px;
 }
 
 .catalog-price,
@@ -580,14 +587,14 @@ a{
 }
 
 .ruble-icon{
-	padding: 0 15px;
+	padding: 0 18px;
 	font-size: 30px;
 	line-height: 30px;
 
 	background-image: url("../img/ruble-icon.png");
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: 2px 0;
+	background-position: 3px 0;
 }
 
 .weight{
@@ -596,6 +603,7 @@ a{
 
 .catalog-title{
 	display: inline;
+	padding: 0 10px;
 
 	color: #ffffff;
 	font-size: 16px;
@@ -617,7 +625,7 @@ a{
 /* Презентационный блок */
 
 .gllacy-info{
-	padding: 20px 25px 0 25px;
+	padding: 25px 20px 0 20px;
 	margin-bottom: 40px;
 	color: #323232;
 
@@ -627,6 +635,8 @@ a{
 }
 
 .gllacy-info-title{
+	margin:0;
+	padding: 0;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 500;
@@ -645,9 +655,10 @@ a{
 
 .info-list-item{
 	position: relative;
-	padding-left: 60px;
+	padding: 5px 0 0 55px;
 	flex-basis: 49%;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+
 }
 
 .info-list-item:nth-child(2n+1){
@@ -704,7 +715,8 @@ a{
 .blog-news-caption{
 	margin:0;
 	padding: 0;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
+
 	
 	color: #323232;
 	font-size: 16px;
@@ -712,9 +724,12 @@ a{
 	font-weight: 500;
 }
 
-.blog-news-link{
-	margin: 0;
+.blog-news-title{
 	padding: 0;
+	margin: 0;
+}
+
+.blog-news-link{
 	
 	color: #323232;
 	font-size: 24px;
@@ -735,12 +750,15 @@ a{
 }
 
 .subscribe-form{
-	padding: 25px;
+	padding: 30px 25px;
 	background-color: #ffffff;
 	border-radius: 15px;
 }
 
 .subscribe-field{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 5px;
 	position: relative;
 	display: flex;
 	justify-content: flex-start;
@@ -765,21 +783,20 @@ a{
 	border: 1px solid rgba(178, 178, 178, 0.5);
 }
 
-.subscribe-label{
-	position: absolute;
-	top: -20px;
-	left: 0;
-
-	padding-left: 15px;
-	visibility: hidden;
+.subscribe-input-field:hover{
+	padding: 9px 14px;
+	border: 2px solid rgba(178, 178, 178, 0.5);
 }
 
-.subscribe-input-class:focus +.subscribe-label{
-	visibility: visible;
+.subscribe-input-field:focus{
+	padding: 9px 14px;
+	border-color: #2e88e4;
+	border-radius: 5px;
+	outline: none;
 }
 
 .button-subscribe{
-	padding: 11px 20px;
+	padding: 11px 15px;
 	margin-left: 10px;
 	
 	font-size: 18px;
@@ -794,7 +811,6 @@ a{
 .contacts{
 	position: relative;
 	overflow:hidden;
-	margin-bottom: 35px;
 	
 	min-height: 430px;
 }
@@ -817,7 +833,7 @@ a{
 
 .contacts-block{
 	float: right;	
-	padding: 30px 20px;
+	padding: 30px 25px;
 	margin: 60px 0;
 	
 	background-color: #f8f7f4;
@@ -825,9 +841,12 @@ a{
 	border-radius: 15px;
 }
 
-.contacts-caption-strong a,
-.contacts-caption-strong a:hover,
-.contacts-caption-strong a:active{
+.contacts-link-tel,
+.contacts-link-tel:hover,
+.contacts-link-tel:active{
+	display: inline-block;
+	margin-top: 2px;
+	margin-bottom: 5px;
 	color: #323232;
 	border-color: #ffffff;
 }
@@ -835,9 +854,9 @@ a{
 .contacts-caption{
 	margin: 0;
 	padding: 0;
-	margin-bottom: 25px;
-	max-width: 240px;
-	font-size: 16px;
+	margin-bottom: 20px;
+	max-width: 230px;
+	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
 }
@@ -849,7 +868,7 @@ a{
 }
 
 .feedback-button{
-	padding: 10px 25px;
+	padding: 10px 22px;
 	
 	font-size: 18px;
 	line-height: 24px;
@@ -860,16 +879,19 @@ a{
 
 .page-footer .container{
 	display: flex;
-	margin-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 24px;
+	margin-top: 15px;
 
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
+}
+.social-links{
+	margin-top: 20px;
 }
 
 .social-item{
 	display: inline;
-	margin-right: 15px;
+	margin-right: 8px;
 	opacity: 0.8;
 }
 
@@ -885,7 +907,10 @@ a{
 	border-radius: 50%;
 }
 
+
 .social-links img{
+	width: 38px;
+	height: 38px;
 	border-radius: 50%;
 	border: 2px solid rgba(255, 255, 255, 0.2)
 }
@@ -896,16 +921,18 @@ a{
 
 .footer-info{
 	display: flex;
+	margin-top: 15px;
+	margin-left: 35px;
 }
 
 .footer-info-list{
 	display: flex;
 	flex-direction: column;
-	max-width: 350px;
+	max-width: 330px;
 	white-space: nowrap;
 	color: #ffffff;
 	font-size: 13px;
-	line-height: 18px;
+	line-height: 22px;
 	font-weight: 400;
 }
 
@@ -922,7 +949,7 @@ a{
 .footer-info-heart::before{
 	content: "";
 	position: absolute;
-	top:2px;
+	top: 5px;
 	left: -22px;
 	
 	width: 15px;
@@ -933,7 +960,7 @@ a{
 .copyright-caption{
 	margin: 0;
 	padding: 0;
-	font-size: 13px;
+	font-size: 12px;
 	line-height: 18px;
 }
 
@@ -1456,6 +1483,7 @@ a{
 /* Модальные окна */
 
 .modal{
+	display: none;
 	color: #323232;
 	background-color: #f8f7f4;
 }

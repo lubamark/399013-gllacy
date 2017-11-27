@@ -6,6 +6,18 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+        background-image: url( "img/gllacy-index-1200.jpg" );
+	bacground-size: 1200px;
+  }
+  body{
+  opacity: 0.3;
+}
+
+  </style>
   </head>
   <body>
 	<input class="visually-hidden" type="radio" id="btn-1" name="toggle" value="slide-1" checked>
@@ -96,7 +108,7 @@
 
 <!--Блок хитов-->
 			<section class="hits-list">
-				<div class="container">
+				<div class="container catalog-container">
 					<h2 class="visually-hidden title">Хиты продаж</h2>
 					<ul class="catalog-list catalog-hit-list">
 						<li class="hit catalog-item">
@@ -159,14 +171,17 @@
 				<div class="container">
 					<article class="blog-news">
 						<p class="blog-news-caption">Новое в нашем блоге</p>
-						<h3 class="blog-news-title title"><a class="blog-news-link" href="#">10 способов сервировки <br>фруктовых щербетов к <br>столу</a></h3>
+						<h3 class="blog-news-title title"><a class="blog-news-link" href="#">
+						10 способов сервировки<br>
+						фруктовых щербетов к<br>
+						столу</a></h3>
 					</article>
 					<div class="subscribe">
 							<form class= "subscribe-form" action="/echo" method="post">
 								<p class="subscribe-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 								<p class="subscribe-field">
 									<input type="email" name="subscribe-field" class="subscribe-input-field" id="subscribe-input" placeholder="Электронная почта">
-									<label class="subscribe-label" for="subscribe-input">Электронная почта</label>
+									<label class="visually-hidden" for="subscribe-input">Электронная почта</label>
 									<button type="submit" class="button button-subscribe">Отправить</button>
 								</p>
 						</form>
@@ -182,13 +197,14 @@
 				<div class="container">
 					<div class="contacts-block">
 						<p class="contacts-caption">
-							Адрес главного офиса и офлайн-магазина:<br>
+							Адрес главного офиса <br>
+							и офлайн-магазина:<br>
 								<span class="contacts-caption-strong">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
 							</p>
-							<p class="contacts-caption" >Для заказов по телефону:<br>
-								<span class="contacts-caption-strong"><a href="tel:+78124502525">8 812 450-25-25</a></span><br>
+							<p class="contacts-caption">Для заказов по телефону:<br>
+								<span class="contacts-caption-strong"><a class="contacts-link-tel" href="tel:+78124502525">8 812 450-25-25</a></span><br>
 								(с 10 до 20 ежедневно)
-						</p>
+							</p>
 						<button type="button" class="button feedback-button" id="feedback-form-button">Форма обратной связи</button>
 					</div>
 				</div>
