@@ -59,7 +59,6 @@ a{
 .container{
 	position: relative;
 	max-width:1200px;
-	min-width: 900px;
 	padding: 0 27px;
 	margin: 0 auto;
 }
@@ -534,7 +533,7 @@ a{
 	min-width: 200px;
 	max-width: 293px;
 	padding: 10px 13px;
-	margin-bottom: -42px;
+	margin-bottom: -45px;
 	
 	text-align: center;
 	border-radius: 5px;
@@ -643,6 +642,7 @@ a{
 .gllacy-info{
 	padding: 25px 20px 10px 20px;
 	margin-bottom: 40px;
+	margin-top: 5px;
 	color: #323232;
 
 	border-radius: 15px;
@@ -1416,7 +1416,7 @@ a{
 
 .pagination{
 	margin-bottom: 30px;
-	margin-top: 50px;
+	margin-top: 55px;
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -1703,8 +1703,7 @@ a{
 	border-radius: 22px;
 }
 
-
-@media screen and (max-width:900px){
+@media screen and (min-width:900px) and (max-width : 980px){
 	.container{
 		width: 900px;
 		padding: 0 20px;
@@ -1740,6 +1739,4 @@ a{
 	
 	.blog-news{
 		margin-right: 20px;
-	}
-
 }
