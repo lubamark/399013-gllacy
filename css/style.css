@@ -17,6 +17,7 @@ body{
 
 a{
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .menu-list,
@@ -264,6 +265,8 @@ a{
 	background-repeat: no-repeat;
 	border: none;
 	border-radius: 16px;
+	
+	cursor: pointer;
 }
 
 .header-buttons:hover,
@@ -304,6 +307,8 @@ a{
 }
 
 .cart-active{
+	color: #323232;
+	background-color: #ffffff;
 	background-image: url("../img/cart-icon-active.svg");
 }
 
