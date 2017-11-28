@@ -30,7 +30,7 @@ var myPlacemark, myMap;
 ymaps.ready(function () {
 	
 	myMap = new ymaps.Map('yandexMap', {
-		center: [59.93896595, 30.33215377],
+		center: [59.9393, 30.3293],
 		zoom: 16,
 		 controls: []
 	}, {suppressMapOpenBlock: true},{ });
