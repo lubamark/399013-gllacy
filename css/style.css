@@ -1,3 +1,45 @@
+/* @font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local('Roboto-Regular'), url("../fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto"), local('Roboto-Medium'), url("../fonts/robotomedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto"), local('Roboto-Bold'), url("../fonts/robotobold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local('Roboto-Regular'), url("../fonts/roboto.woff") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto"), local('Roboto-Medium'), url("../fonts/robotomedium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto"), local('Roboto-Bold'), url("../fonts/robotobold.woff2") format("woff2");
+} */
+
 *, *::before, ::after{
 	box-sizing: inherit;
 }
@@ -7,6 +49,8 @@ html{
 }
 
 body{
+	min-width: 900px;
+	
 	font-family: "Roboto", Tahoma, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
@@ -288,8 +332,8 @@ a{
 
 .button-enter,
 .button-cart{
-	padding: 8px 15px 8px 45px;
-	background-position: 18px center;
+	padding: 8px 14px 8px 45px;
+	background-position: 17px center;
 }
 
 .button-enter{
@@ -425,10 +469,11 @@ a{
 }
 
 .button-slider{
-	padding: 10px 35px;
+	padding: 10px 41px;
 	font-size: 32px;
 	line-height: 44px;
 	font-weight: 700;
+	letter-spacing: -0.68px;
 	text-shadow: 2px 0 5px rgba(160, 32, 11, 0.75);
 	border-radius: 32px;
 }
@@ -472,7 +517,7 @@ a{
 	flex-basis: 49%;
 	min-height: 230px;
 	
-	padding: 25px 20px;
+	padding: 25px 18px;
 	margin-bottom: 30px;
 	
 	background-repeat: no-repeat;
@@ -486,6 +531,7 @@ a{
 	padding: 0;
 	font-size: 35px;
 	font-weight: 700;
+	
 	margin-bottom: 25px;
 }
 
@@ -504,8 +550,7 @@ a{
 	background-size: cover;
 }
 
-.bonus-2
-{
+.bonus-2{
 	background-color: #422a20;
 	background-image: url("../img/chocolate.jpg");
 }
@@ -647,7 +692,7 @@ a{
 .gllacy-info{
 	padding: 25px 20px 10px 20px;
 	margin-bottom: 40px;
-	margin-top: 5px;
+	margin-top: 15px;
 	color: #323232;
 
 	border-radius: 15px;
@@ -842,8 +887,9 @@ a{
 
 .contacts-map img{
 	position: absolute;
-	width: 100%;
-	overflow: hidden;
+	left: center;
+	height: 430px;
+	
 }
 
 .contacts .container{
