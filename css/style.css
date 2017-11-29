@@ -25,6 +25,8 @@
 	font-style: normal;
 } */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic');
+
 *, *::before, ::after{
 	box-sizing: inherit;
 }
@@ -494,13 +496,17 @@ a{
 .bonus-stuff .container{
 	display: flex;
 	justify-content: flex-start;
+	flex-wrap: wrap;
 }
 
 .bonus-item{
 	display: flex;
 	flex-direction: column;
-	flex-basis: 49%;
+	flex-basis: 48%;
+	max-width: 560px;
 	min-height: 230px;
+	flex-grow: 1;
+	
 	
 	padding: 25px 18px;
 	margin-bottom: 30px;
@@ -509,6 +515,10 @@ a{
 	background-position: 0 0;
 	border-radius: 15px;
 	background-size: cover;
+}
+
+.bonus-item:nth-of-type(2n + 1){
+	margin-right: 26px; 
 }
 
 .bonus-item-title{
@@ -529,7 +539,6 @@ a{
 }
 
 .bonus-1{
-	margin-right: 26px;
 	background-color: #761326;
 	background-image: url("../img/raspberries.jpg");
 	background-size: cover;
@@ -1745,9 +1754,9 @@ a{
 		padding: 0 20px;
 	}
 	
-	.bonus-1{
+	.bonus-item:nth-of-type(2n + 1){
 	margin-right: 20px;
-	}
+}
 	
 	.catalog-container{
 	padding: 0 5px;
