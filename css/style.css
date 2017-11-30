@@ -1551,7 +1551,7 @@ a{
 /* Модальные окна */
 
 .modal{
-	
+	//display: none;
 	color: #323232;
 	background-color: #f8f7f4;
 	box-shadow: 0 20px 20px rgba(0, 0 , 0, 0.4);
@@ -1583,8 +1583,6 @@ a{
 }
 
 .modal-search{
-	//display: none;
-	
 	position: absolute;
 	z-index: 30;
 	top: 40px;
@@ -1714,17 +1712,22 @@ a{
 	background: #f8f7f4 url("../img/close-icon.svg") no-repeat 0 0;
 	
 	border: none;
+	cursor: pointer;
 }
 
 /*Корзина c товарами*/
 
 .cart-box{
+	position: absolute;
+	z-index: 30;
+	top: 40px;
+	right: 0;
+	
 	padding: 20px 15px;
-	display: flex;
-	display: none;
-	flex-direction: column;
+	//display: flex;
+	//flex-direction: column;
 	width: 540px;
-	align-items: flex-end;
+	//align-items: flex-end;
 	
 	font-size: 13px;
 	line-height: 16px;
@@ -1738,9 +1741,8 @@ a{
 
 .cart-inner td{
 	vertical-align: top;
-	height: 50px;
+	height: 55px;
 }
-
 
 .cart-inner-delete{
 	padding:5px 0;
@@ -1755,7 +1757,6 @@ a{
 	background-size: cover;
 	
 	border: none;
-	
 	cursor: pointer;
 }
 
@@ -1779,6 +1780,8 @@ a{
 
 .cart-inner-count td{
 	padding: 15px 0;
+	height: 50px;
+	
 	font-weight: 700;
 	font-size: 15px;
 	line-height: 18px;
@@ -1789,6 +1792,8 @@ a{
 }
 
 .button-inner-cart{
+	display: block;
+	margin-left: auto;
 	padding: 10px 15px;
 	border-radius: 22px;
 }
