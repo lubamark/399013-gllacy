@@ -46,7 +46,28 @@
 <!--Кнопки в шапке-->
 					<ul class="header-buttons-list">
 						<li><button type="button" class="button-search header-buttons"><span class="visually-hidden">Поиск</span></button></li>
-						<li><button type="button" class="button-enter header-buttons">Вход</button></li>
+						<li>
+							<button type="button" class="button-enter header-buttons">Вход</button>
+							<!--Окно входа -->
+							<div class="modal modal-enter">
+								<form class="form-enter" action="https://echo.htmlacademy.ru/" method="post">
+									<p class="form-wrapper">
+										<input class="modal-input modal-input-enter" type="email" id="email" name="email" placeholder="Электронная почта" required>
+										<label for="email" class="visually-hidden modal-label">Электронная почта</label>
+									</p>
+									<p class="form-wrapper">
+										<input class="modal-input modal-input-enter" type="password" name="password" placeholder="Пароль" required>
+										<label class="visually-hidden modal-label">Пароль</label>
+									</p>
+									<button type="submit" class="button button-login">Войти</button>
+									<ul class="enter-help">
+										<li><a class="enter-link" href="#">Забыли пароль?</a></li>
+										<li><a class="enter-link" href="#">Новая регистрация</a></li>
+									</ul>
+								</form>
+							</div>
+						</li>
+						
 						<li><button type="button" class="button-cart header-buttons"><span class="cart-content">Пусто</span></button></li>
 					</ul>
 				</nav>
@@ -245,24 +266,6 @@
 				<input class="modal-input modal-input-header" type="text" name="search" id="search" placeholder="Что ищем?">
 				<label for="search" class="modal-label visually-hidden" >Что ищем?</label>
 			</p>
-		</form>
-	</div>
-<!--Окно входа -->
-	<div class="modal modal-enter">
-		<form class="form-enter" action="https://echo.htmlacademy.ru/" method="post">
-			<p class="form-wrapper">
-				<input class="modal-input modal-input-enter" type="email" id="email" name="email" placeholder="Электронная почта" required>
-				<label for="email" class="visually-hidden modal-label">Электронная почта</label>
-			</p>
-			<p class="form-wrapper">
-				<input class="modal-input modal-input-enter" type="password" name="password" placeholder="Пароль" required>
-				<label class="visually-hidden modal-label">Пароль</label>
-			</p>
-			<button type="submit" class="button button-login">Войти</button>
-			<ul class="enter-help">
-				<li><a class="enter-link" href="#">Забыли пароль?</a></li>
-				<li><a class="enter-link" href="#">Новая регистрация</a></li>
-			</ul>
 		</form>
 	</div>
 <!--Форма обратной связи-->
