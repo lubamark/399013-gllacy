@@ -7,6 +7,7 @@ var modalLogin = document.querySelector(".modal-enter");
 var inputLogin = document.querySelector("#email");
 var inputPassword = document.querySelector("#password");
 var formLogin = document.querySelector(".form-enter");
+var storage = localStorage.getItem("login");
 
 
 /*Поиск*/
@@ -34,7 +35,13 @@ var formLogin = document.querySelector(".form-enter");
 	buttonLogin.addEventListener("mouseover", function(evt){
 		evt.preventDefault();
 		modalLogin.classList.add("modal-show");
-		inputLogin.focus();
+		
+		if(storage){
+			inputLogin.value = storage;
+			inputPassword.focus();
+		} else {
+			inputLogin.focus();
+		}
 	});
 	buttonLogin.addEventListener("mouseout", function(evt){
 		evt.preventDefault();
@@ -51,7 +58,14 @@ var formLogin = document.querySelector(".form-enter");
 		modalLogin.classList.remove("modal-show");
 	});
 	
-	
+	formLogin.addEventListener("submit", function(evt){
+		if(!inputLogin.value || !inputPassword.value){
+			evt.preventDefault();
+			modalLogin.classList.add("modal-error");
+		} else{
+			localStorage.setItem("login", inputLogin.value);
+		}
+	});
 	
 	
 	
@@ -59,7 +73,7 @@ var formLogin = document.querySelector(".form-enter");
 	if (evt.keyCode === 27) {
 		if (modalSearch.classList.contains("modal-show")) {
 			modalSearch.classList.remove("modal-show");
-			} else if (modalLogin.classList.contains("modal-show")) {
+		} else if (modalLogin.classList.contains("modal-show")) {
 				modalLogin.classList.remove("modal-show");
 			}
 		}
