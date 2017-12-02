@@ -100,7 +100,7 @@ a{
 
 .menu{
 	display: flex;
-	min-height: 64px;
+	min-height: 70px;
 	align-items: center;
 
 }
@@ -121,7 +121,7 @@ a{
 
 .menu-item {
 	position: relative;
-	padding: 10px 0 20px 0;
+	padding: 5px 0 20px 0;
 }
 
 .menu-link{
@@ -175,7 +175,7 @@ a{
 	display: none;
 	position: absolute;
 	left: -7px;
-	top: 45px;
+	top: 40px;
 	z-index: 1;
 	
 	background-color: #ffffff;
@@ -282,7 +282,10 @@ a{
 	justify-content: flex-end;
 }
 
-.header-buttons-list li{ position: relative;}
+.header-buttons-list > li{ 
+	position: relative;
+	padding: 15px 0 20px 0;
+}
 
 .header-buttons{
 	margin-left: 9px;
@@ -366,7 +369,7 @@ a{
 
 .header-contacts-wrap{
 	position: absolute;
-	top: -10px;
+	top: -15px;
 	right: 0;
 	
 	text-align: right;
@@ -420,7 +423,7 @@ a{
 
 .slider{
 	position: relative;
-	padding-top: 275px;
+	padding-top: 268px;
 	margin-bottom: 40px;
 	
 	text-align: center;
@@ -475,10 +478,10 @@ a{
 
 .button-slider{
 	padding: 10px 41px;
+	
 	font-size: 32px;
 	line-height: 44px;
 	font-weight: 700;
-	letter-spacing: -0.68px;
 	text-shadow: 2px 0 5px rgba(160, 32, 11, 0.75);
 	border-radius: 32px;
 }
@@ -854,8 +857,9 @@ a{
 	padding: 10px 15px;
 	flex-grow: 1;
 
-	border-radius: 5px;
+	font-family: inherit;
 	font-size: 16px;
+	border-radius: 5px;
 	border: 1px solid rgba(178, 178, 178, 0.5);
 }
 
@@ -1506,7 +1510,7 @@ a{
 .modal-search{
 	position: absolute;
 	z-index: 30;
-	top: 40px;
+	top: 52px;
 	right: 0;
 	
 	width: 340px;
@@ -1517,7 +1521,7 @@ a{
 .modal-enter{
 	position: absolute;
 	z-index: 20;
-	top: 40px;
+	top: 52px;
 	right: 0;
 
 	
@@ -1529,6 +1533,8 @@ a{
 .modal-input{
 	width: 100%;
 	padding: 10px 15px;
+	
+	font-family: inherit;
 	line-height: 22px;
 	font-weight: 400;
 	border: 1px solid rgba(178, 178, 178, 0.5);
@@ -1611,6 +1617,7 @@ a{
 }
 
 .feedback-textarea{
+	font-family: inherit;
 	min-height: 155px;
 }
 
@@ -1715,6 +1722,15 @@ a{
 	padding: 10px 15px;
 	border-radius: 22px;
 }
+
+.modal-show{
+	display: block;
+}
+
+
+
+
+
 
 @media screen and (min-width:900px) and (max-width : 980px){
 	.container{

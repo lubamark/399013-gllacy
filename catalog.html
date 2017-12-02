@@ -41,7 +41,18 @@
 				</ul>
 <!--Кнопки в шапке-->
 				<ul class="header-buttons-list">
-					<li><button type="button" class="button-search header-buttons"><span class="visually-hidden">Поиск</span></button></li>
+					<li class="modal-item-search">
+							<button type="button" class="button-search header-buttons"><span class="visually-hidden">Поиск</span></button>
+							<!--Окно поиска-->
+							<div class="modal modal-search">
+								<form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
+									<p class="form-wrapper">
+										<input class="modal-input modal-input-header" type="text" name="search" id="search" placeholder="Что ищем?">
+										<label for="search" class="modal-label visually-hidden" >Что ищем?</label>
+									</p>
+								</form>
+							</div>
+						</li>
 					<li><button type="button" class="button-enter header-buttons">Вход</button></li>
 					<li>
 						<button type="button" class="button-cart cart-active header-buttons"><span class="cart-content">2 товара</span></button>
@@ -326,7 +337,8 @@
 			</div>
 		</div>
 		</footer>
-
+	<!-- Скрипты для модалок-->
+	<script src="js/modal-script.js"></script>
 	
   </body>
 </html>

@@ -6,16 +6,6 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-<!--  <style>
-	HTML {
-	background-repeat: no-repeat;
-	background-position:  50% 0;
-	background-image: url( "img/gllacy-index-1200.jpg" );
-	}
-	body{
-	opacity: 0.4;
-	}
-	</style>  -->
   </head>
   <body>
 	<input class="non-display-input" type="radio" id="btn-1" name="toggle" value="slide-1" checked>
@@ -45,7 +35,7 @@
 					</ul>
 <!--Кнопки в шапке-->
 					<ul class="header-buttons-list">
-						<li>
+						<li class="modal-item-search">
 							<button type="button" class="button-search header-buttons"><span class="visually-hidden">Поиск</span></button>
 							<!--Окно поиска-->
 							<div class="modal modal-search">
@@ -55,9 +45,9 @@
 										<label for="search" class="modal-label visually-hidden" >Что ищем?</label>
 									</p>
 								</form>
-	</div>
+							</div>
 						</li>
-						<li>
+						<li class="modal-item-login">
 							<button type="button" class="button-enter header-buttons">Вход</button>
 							<!--Окно входа -->
 							<div class="modal modal-enter">
@@ -67,8 +57,8 @@
 										<label for="email" class="visually-hidden modal-label">Электронная почта</label>
 									</p>
 									<p class="form-wrapper">
-										<input class="modal-input modal-input-enter" type="password" name="password" placeholder="Пароль" required>
-										<label class="visually-hidden modal-label">Пароль</label>
+										<input class="modal-input modal-input-enter" type="password" id="password" name="password" placeholder="Пароль" required>
+										<label for="password" class="visually-hidden modal-label">Пароль</label>
 									</p>
 									<button type="submit" class="button button-login">Войти</button>
 									<ul class="enter-help">
@@ -295,6 +285,8 @@
 <!--Скрипт для карты -->
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/map-marker.js"></script>
+<!-- Скрипты для модалок-->
+	<script src="js/modal-script.js"></script>
 
   </body>
 </html>
