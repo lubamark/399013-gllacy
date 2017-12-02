@@ -399,6 +399,10 @@ a{
 	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
+.non-display-input{
+	display: none;
+}
+
 .slide-wrapper::before,
 .slide-wrapper::after {
   content: "";
