@@ -52,8 +52,28 @@
 									</p>
 								</form>
 							</div>
-						</li>
-					<li><button type="button" class="button-enter header-buttons">Вход</button></li>
+					</li>
+					<li class="modal-item-login">
+						<button type="button" class="button-enter header-buttons">Вход</button>
+						<!--Окно входа -->
+						<div class="modal modal-enter">
+							<form class="form-enter" action="https://echo.htmlacademy.ru/" method="post">
+								<p class="form-wrapper">
+									<input class="modal-input modal-input-enter" type="email" id="email" name="email" placeholder="Электронная почта">
+									<label for="email" class="visually-hidden modal-label">Электронная почта</label>
+								</p>
+								<p class="form-wrapper">
+									<input class="modal-input modal-input-enter" type="password" id="password" name="password" placeholder="Пароль">
+									<label for="password" class="visually-hidden modal-label">Пароль</label>
+								</p>
+								<button type="submit" class="button button-login">Войти</button>
+								<ul class="enter-help">
+									<li><a class="enter-link" href="#">Забыли пароль?</a></li>
+									<li><a class="enter-link" href="#">Новая регистрация</a></li>
+								</ul>
+							</form>
+						</div>
+					</li>
 					<li>
 						<button type="button" class="button-cart cart-active header-buttons"><span class="cart-content">2 товара</span></button>
 						<!-- Корзина -->
@@ -70,7 +90,7 @@
 									<tr>
 										<td class="cart-inner-delete"><button type="button" class="cart-delete-button"><span class="visually-hidden">Удалить из корзины</span></button></td>
 										<td  class="cart-inner-photo"><img src="img/cream-srawberry-small.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-										<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+											<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 										<td>1,5 кг х <span class="cart-inner-price">300 руб.</span></td>
 										<td>450 руб.</td>
 									</tr>

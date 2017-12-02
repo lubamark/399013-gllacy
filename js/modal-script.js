@@ -1,16 +1,9 @@
+/*Поиск*/
 var buttonSearch = document.querySelector(".modal-item-search");
 var modalSearch = document.querySelector(".modal-search");
 var inputSearch = modalSearch.querySelector("#search");
 
-var buttonLogin = document.querySelector(".modal-item-login");
-var modalLogin = document.querySelector(".modal-enter");
-var inputLogin = document.querySelector("#email");
-var inputPassword = document.querySelector("#password");
-var formLogin = document.querySelector(".form-enter");
-var storage = localStorage.getItem("login");
 
-
-/*Поиск*/
 	buttonSearch.addEventListener("mouseover", function(evt){
 		evt.preventDefault();
 		modalSearch.classList.add("modal-show");
@@ -32,6 +25,14 @@ var storage = localStorage.getItem("login");
 	});
 
 /* Форма входа */
+
+var buttonLogin = document.querySelector(".modal-item-login");
+var modalLogin = document.querySelector(".modal-enter");
+var inputLogin = document.querySelector("#email");
+var inputPassword = document.querySelector("#password");
+var formLogin = document.querySelector(".form-enter");
+var storage = localStorage.getItem("login");
+
 	buttonLogin.addEventListener("mouseover", function(evt){
 		evt.preventDefault();
 		modalLogin.classList.add("modal-show");
@@ -61,13 +62,15 @@ var storage = localStorage.getItem("login");
 	formLogin.addEventListener("submit", function(evt){
 		if(!inputLogin.value || !inputPassword.value){
 			evt.preventDefault();
+			modalLogin.classList.remove("modal-error");
+			modalLogin.offsetWidth = modalLogin.offsetWidth;
 			modalLogin.classList.add("modal-error");
 		} else{
 			localStorage.setItem("login", inputLogin.value);
 		}
 	});
 	
-	
+/* Общие*/
 	
 	window.addEventListener("keydown", function (evt) {
 	if (evt.keyCode === 27) {
@@ -75,6 +78,7 @@ var storage = localStorage.getItem("login");
 			modalSearch.classList.remove("modal-show");
 		} else if (modalLogin.classList.contains("modal-show")) {
 				modalLogin.classList.remove("modal-show");
+				popup.classList.remove("modal-error");
 			}
 		}
 	});
