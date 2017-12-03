@@ -152,5 +152,3 @@ if(buttonCart){
 			}
 		}
 	});
-
-
