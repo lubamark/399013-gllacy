@@ -127,6 +127,7 @@ a{
 .menu-link{
 	position: relative;
 	display: inline-block;
+	vertical-align: middle;
 	white-space: nowrap;
 	padding: 6px 14px;
 	
@@ -241,7 +242,8 @@ a{
 
 .menu-item:hover > .submenu-list,
 .menu-item:focus > .submenu-list{
-	display: inline-block;;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 /* Кнопки */
@@ -348,6 +350,7 @@ a{
 
 .cart-content{
 	display: inline-block;
+	vertical-align: top;
 	white-space: nowrap;
 	min-width: 60px;
 }
@@ -496,10 +499,12 @@ a{
 }
 .slider-controls li{
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .slider-controls label{
 	display: inline-block;
+	vertical-align: middle;
 	width: 20px;
 	height: 20px;
 	margin-right: 9px;
@@ -607,6 +612,8 @@ a{
 .catalog-link{
 	position: relative;
 	display: inline-block;
+	vertical-align: middle;
+	
 	border-bottom: none;
 }
 
@@ -681,6 +688,7 @@ a{
 
 .catalog-title{
 	display: inline;
+	vertical-align: top;
 
 	color: #ffffff;
 	font-size: 16px;
@@ -931,6 +939,7 @@ a{
 .contacts-link-tel:hover,
 .contacts-link-tel:active{
 	display: inline-block;
+	vertical-align: top;
 	margin-top: 2px;
 	margin-bottom: 5px;
 	color: #323232;
@@ -977,6 +986,7 @@ a{
 
 .social-item{
 	display: inline;
+	vertical-align: middle;
 	margin-right: 7px;
 	opacity: 0.8;
 }
@@ -1079,6 +1089,7 @@ a{
 .breadcrumbs-item{
 	position: relative;
 	display: inline-block;
+	vertical-align: middle;
 	margin-right: 18px;
 }
 
@@ -1406,11 +1417,14 @@ a{
 
 .pagination-item{
 	display: inline-block;
+	vertical-align: middle;
 	margin-right: 2px;
 }
 
 .pagination-link{
 	display: inline-block;
+	vertical-align: middle;
+	
 	min-width: 28px;
 	padding: 5px 0;
 	
@@ -1597,6 +1611,7 @@ a{
 
 .enter-help{
 	display: inline-block;
+	vertical-align: top;
 	position: relative;
 	top: -5px;
 	margin: 0;
@@ -1709,6 +1724,7 @@ a{
 
 .cart-delete-button{
 	display: inline-block;
+	vertical-align: middle;
 	padding: 5px;
 	background: #f8f7f4 url("../img/close-icon.svg") no-repeat 0 0;
 	background-size: cover;
