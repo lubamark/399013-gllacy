@@ -1108,7 +1108,7 @@ a{
 
 .filter-form{
 	display: flex;
-	max-width: 860px;
+	min-width: 860px;
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-wrap: wrap;
