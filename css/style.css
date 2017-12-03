@@ -1,30 +1,3 @@
-/* @font-face{
-	font-family: "Roboto";
-	src:
-		url("../fonts/Roboto-Regular-webfont.eot") format("eot"),
-		url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-
- @font-face{
-	font-family: "Roboto";
-	src:
-		url("../fonts/Roboto-Medium-webfont.eot") format("eot"),
-		url("../fonts/Roboto-Medium-webfont.woff") format("woff");
-	font-weight: 500;
-	font-style: normal;
-}
-
- @font-face{
-	font-family: "Roboto";
-	src:
-		url("../fonts/Roboto-Bold-webfont.eot") format("eot"),
-		url("../fonts/Roboto-Bold-webfont.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-} */
-
 *, *::before, ::after{
 	box-sizing: inherit;
 }
@@ -290,6 +263,7 @@ a{
 }
 
 .header-buttons{
+	display: block;
 	margin-left: 9px;
 	
 	color: #ffffff;
