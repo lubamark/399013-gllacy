@@ -1133,7 +1133,7 @@ a {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 16px;
-	list style: none;
+	list-style: none;
 }
 
 .breadcrumbs-item {
@@ -1867,4 +1867,5 @@ a {
 	
 	.blog-news {
 		margin-right: 20px;
+	}
 }
