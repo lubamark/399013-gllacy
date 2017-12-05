@@ -647,6 +647,7 @@ a {
 
 .catalog-photo img {
 	width: 100%;
+	height: auto;
 
 	border-radius: 50%;
 }
@@ -930,20 +931,26 @@ a {
 
 .contacts-map {
 	position: absolute;
+	
 	width: 100%;
 	height: 100%;
 }
 
 .contacts-map img {
 	position: absolute;
-	left: center;
 	
 	width: 100%;
+	height: auto;	
 }
 
-.contacts .container {
+.contacts-map > .container {
 	position: relative;
+	
+	padding-left: 0;
+	padding-right: 0;
 }
+
+
 
 .contacts-block {
 	float: right;
