@@ -661,6 +661,7 @@ a {
 	        flex-direction: flex-start;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
+	min-width: 900px;
 	margin-bottom: 10px;
 }
 
@@ -2007,7 +2008,7 @@ a {
 	
 	.catalog-item {
 		padding: 10px;
-		min-width: 220px;
+		min-width: 215px;
 	}
 	
 	.catalog-price {
@@ -2023,7 +2024,7 @@ a {
 	}
 	
 	.info-list-item {
-		min-width: 400px;
+		min-width: 395px;
 	}
 	
 	.subscribe-description {

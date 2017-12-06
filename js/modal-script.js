@@ -13,6 +13,7 @@ var inputSearch = modalSearch.querySelector("#search");
 	buttonSearch.addEventListener("mouseout", function(evt){
 		evt.preventDefault();
 		modalSearch.classList.remove("modal-show");
+		inputSearch.blur();
 	});
 	
 	modalSearch.addEventListener("mouseover", function(evt){
@@ -23,6 +24,7 @@ var inputSearch = modalSearch.querySelector("#search");
 	modalSearch.addEventListener("mouseout", function(evt){
 		evt.preventDefault();
 		modalSearch.classList.remove("modal-show");
+		inputSearch.blur();
 	});
 
 /* Форма входа */
