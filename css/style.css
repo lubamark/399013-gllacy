@@ -89,7 +89,13 @@ a {
 }
 
 .logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 154px;
+	height: 64px;
 	margin-right: 9px;
+	
+	font-size: 14px;
 }
 
 /* Меню */
@@ -688,6 +694,8 @@ a {
 	display: inline-block;
 	vertical-align: middle;
 	
+	color: #ffffff;
+	
 	border-bottom: none;
 }
 
@@ -710,13 +718,18 @@ a {
 	
 	margin-bottom: 7px;
 	max-width: 267px;
-	min-width: 200px;
+	max-height: 267px;
+
 }
 
 .catalog-photo img {
+	display: block;
 	width: 100%;
+	min-width: 200px;
+	min-height: 200px;
 	height: auto;
-
+	
+	background-color: #fb7eaa;
 	border-radius: 50%;
 }
 
@@ -915,6 +928,7 @@ a {
 }
 
 .blog-news-title {
+	width: 285px;
 	padding: 0;
 	margin: 0;
 }
@@ -937,10 +951,9 @@ a {
 	
 	color: #5a5a5a;
 	
+	background-color: #ffffff;
 	background-image: -webkit-repeating-linear-gradient(315deg, #ffffff 0px, #ffffff 5px, #92cdff 5px, #92cdff 10px, #ffffff 10px, #ffffff 15px, #fe9e90 15px, #fe9e90 20px);
-	
 	background-image: -o-repeating-linear-gradient(315deg, #ffffff 0px, #ffffff 5px, #92cdff 5px, #92cdff 10px, #ffffff 10px, #ffffff 15px, #fe9e90 15px, #fe9e90 20px);
-	
 	background-image: repeating-linear-gradient(135deg, #ffffff 0px, #ffffff 5px, #92cdff 5px, #92cdff 10px, #ffffff 10px, #ffffff 15px, #fe9e90 15px, #fe9e90 20px);
 	border-radius: 15px;
 }
@@ -1037,7 +1050,11 @@ a {
 	position: absolute;
 	
 	width: 1200px;
-	height: auto;	
+	height: 430px;
+	
+	color: #323232;
+	
+	background-color: #efe9d0;
 }
 
 .contacts-map > .container {
@@ -1046,8 +1063,6 @@ a {
 	padding-left: 0;
 	padding-right: 0;
 }
-
-
 
 .contacts-block {
 	float: right;
@@ -1082,15 +1097,20 @@ a {
 .contacts-caption {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 18px;
 	max-width: 230px;
+	margin-bottom: 18px;
 	
+	white-space: pre-line;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
 }
 
 .contacts-caption-strong {
+	margin: 0;
+
+	padding: 0;
+	
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
@@ -1145,6 +1165,8 @@ a {
 }
 
 .social-item a {
+	color: #ffffff;
+	
 	border-bottom: none;
 	border-radius: 50%;
 }
@@ -1339,14 +1361,17 @@ a {
 .style-select {
 	overflow: hidden;
 	width: 192px;
+	height: 36px;
 	
 	border-radius: 18px;
 }
 
 .catalog-select {
 	width: 225px;
-	padding: 8px 10px;
+	height: 36px;
+	padding: 7px 10px 8px 10px;
 
+	font-family: inherit;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1371,10 +1396,11 @@ a {
 }
 
 .catalog-select option {
-	color: #323232;
+	font-family: inherit;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
+	color: #323232;
 }
 
 .field-fat-wrapper,
@@ -1503,9 +1529,9 @@ a {
 }
 
 .bar {
-	width: 60%;
+	width: 50%;
 	height: 4px;
-	margin-left: 20%;
+	margin-left: 15%;
 	
 	background: #ffffff;
 }
