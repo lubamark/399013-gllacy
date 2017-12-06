@@ -259,11 +259,8 @@ a {
 	color: #ffffff;
 	
 	background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(231, 74, 53)), to(rgb(242, 104, 67)));
-	
 	background-image: -webkit-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
-	
 	background-image: -o-linear-gradient(bottom, rgb(231, 74, 53), rgb(242, 104, 67));
-	
 	background-image: linear-gradient(to top, rgb(231, 74, 53), rgb(242, 104, 67));
 	-webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.65);
 	        box-shadow: 0 2px 2px rgba(172, 16, 0, 0.65);
@@ -448,9 +445,7 @@ a {
 	background-position: top center;
 	
 	-webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
-	
 	-o-transition: background-image 0.5s ease, background-color 0.5s ease;
-	
 	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -574,9 +569,9 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: start;
-	    -ms-flex-pack: start;
-	        justify-content: flex-start;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 }
@@ -589,13 +584,13 @@ a {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	-ms-flex-preferred-size: 48%;
-	    flex-basis: 48%;
-	max-width: 560px;
+	-ms-flex-preferred-size: 44%;
+	    flex-basis: 44%;
 	min-height: 230px;
 	-webkit-box-flex: 1;
 	    -ms-flex-positive: 1;
 	        flex-grow: 1;
+	max-width: 560px;
 	padding: 25px 18px;
 	margin-bottom: 30px;
 	
@@ -631,7 +626,6 @@ a {
 .bonus-1 {
 	background-color: #761326;
 	background-image: url("../img/raspberries.jpg");
-	background-size: cover;
 }
 
 .bonus-2 {
@@ -659,10 +653,12 @@ a {
 	position: relative;
 
 	display: -webkit-box;
-
 	display: -ms-flexbox;
-
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: flex-start;
+	        flex-direction: flex-start;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	margin-bottom: 10px;
@@ -672,11 +668,12 @@ a {
 	position: relative;
 	z-index: 10;
 	
-	-ms-flex-preferred-size: 25%;
-	
-	    flex-basis: 25%;
-	min-width: 200px;
-	max-width: 293px;
+	-ms-flex-preferred-size: 22%;
+	    flex-basis: 22%;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	max-width: 295px;
 	padding: 10px 13px;
 	margin-bottom: -45px;
 	
@@ -839,15 +836,18 @@ a {
 .info-list-item {
 	position: relative;
 	
-	-ms-flex-preferred-size: 49%;
-	
-	    flex-basis: 49%;
+	-ms-flex-preferred-size: 40%;
+	    flex-basis: 40%;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	max-width: 540px;
 	padding: 5px 0 0 55px;
 	margin-bottom: 15px;
 }
 
 .info-list-item:nth-child(2n+1) {
-	margin-right: 2%;
+	margin-right: 26px;
 }
 
 .info-list-item::before {
@@ -1030,12 +1030,13 @@ a {
 	
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 }
 
 .contacts-map img {
 	position: absolute;
 	
-	width: 100%;
+	width: 1200px;
 	height: auto;	
 }
 
@@ -1988,8 +1989,12 @@ a {
 
 @media screen and (min-width:900px) and (max-width : 980px){
 	.container {
-		width: 900px;
+		min-width: 900px;
 		padding: 0 20px;
+	}
+	
+	.bonus-item{
+		min-width: 420px;
 	}
 	
 	.bonus-item:nth-of-type(2n + 1) {
@@ -1997,11 +2002,12 @@ a {
 }
 	
 	.catalog-container {
-	padding: 0 10px;
+		padding: 0 10px;
 	}
 	
 	.catalog-item {
 		padding: 10px;
+		min-width: 220px;
 	}
 	
 	.catalog-price {
@@ -2009,11 +2015,15 @@ a {
 	}
 	
 	.button-catalog {
-	padding: 10px 12px; 
+		padding: 10px 12px; 
 	}
 	
 	.catalog-photo {
 		margin-bottom: 4px;
+	}
+	
+	.info-list-item {
+		min-width: 400px;
 	}
 	
 	.subscribe-description {
