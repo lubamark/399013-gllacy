@@ -942,6 +942,11 @@ a {
 	background-color: rgba(255, 255, 255, 0.8);
 }
 
+.blog-news-link:hover,
+.blog-news-link:focus{
+	color: #e84d37;
+}
+
 /* Подписка */
 
 .subscribe {
@@ -1848,6 +1853,14 @@ a {
 	
 	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
+
+.enter-link:hover,
+.enter-link:focus{
+	color: #e84d37;
+	
+	border-color: rgba(236, 89, 60, 0.3);
+}
+
 
 .feedback-form {
 	display: -webkit-box;
