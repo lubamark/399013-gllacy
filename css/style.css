@@ -747,7 +747,7 @@ a {
 }
 
 .catalog-price {
-		position: absolute;
+	position: absolute;
 	left: 0px;
 	bottom: 20px;
 	
@@ -1041,6 +1041,8 @@ a {
 	
 	overflow:hidden;
 	min-height: 430px;
+	
+	background-color: #efe9d0;
 }
 
 .contacts-map {
@@ -1058,8 +1060,6 @@ a {
 	height: 430px;
 	
 	color: #323232;
-	
-	background-color: #efe9d0;
 }
 
 .contacts-map > .container {
@@ -1374,7 +1374,7 @@ a {
 .catalog-select {
 	width: 225px;
 	height: 36px;
-	padding: 7px 10px 8px 10px;
+	padding: 7px 10px 8px 15px;
 
 	font-family: inherit;
 	font-size: 16px;
