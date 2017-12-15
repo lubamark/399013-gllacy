@@ -1387,7 +1387,10 @@ a {
 	line-height: 18px;
 	font-weight: 500;
 	color: #ffffff;
-
+	
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
 	background: rgba(255, 255, 255, 0.2) url("../img/icon-down-white.svg") no-repeat 167px 13px;
 	border:none;
 	cursor: pointer;
@@ -2038,7 +2041,7 @@ a {
 	display: block;
 }
 
-@media screen and (min-width:900px) and (max-width : 980px){
+@media screen and (max-width : 970px){
 	.container {
 		min-width: 900px;
 		padding: 0 20px;
@@ -2058,7 +2061,7 @@ a {
 	
 	.catalog-item {
 		padding: 10px;
-		min-width: 215px;
+		max-width: 210px;
 	}
 	
 	.catalog-price {
